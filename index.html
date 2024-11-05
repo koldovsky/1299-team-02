@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header class="header">
       <div
@@ -24,23 +25,49 @@
         data-hx-get="global.contact-bar.partial.html"
       ></div>
     </header>
-    <!-- Diving packages -->
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.diving.packages.partial.html"
-    ></section>
-    <!--Courses-->
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.courses.partial.html"
-    ></section>
-    <!--Gallery-->
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.gallery.partial.html"
-    ></section>
+    <main>
+      <!-- Diving packages -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.diving.packages.partial.html"
+      ></section>
+      <!--Courses-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.courses.partial.html"
+      ></section>
+      <!--Gallery-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.gallery.partial.html"
+      ></section>
+
+      <!-- Contacts -->
+      <section
+        class="contacts"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.partial.html"
+      ></section>
+      <!-- Contacts Map -->
+      <div
+        class="contacts__map"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.map.partial.html"
+      ></div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <section
+        class="footer__content"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></section>
+    </footer>
   </body>
 </html>
