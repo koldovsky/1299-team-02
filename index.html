@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diving Club</title>
+    <link
+      rel="shortcut icon"
+      href="img/global/icon.svg"
+      type="image/image/svg+xml"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diving Club</title>
-  <link rel="shortcut icon" href="img/global/icon.svg" type="image/image/svg+xml" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header class="header">
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.contact-bar.partial.html"
+      ></div>
+    </header>
+    <main>
+      <!--Unveil the Marvellous Undersea-->
+      <section 
+        data-hx-trigger="load" 
+        data-hx-swap="outerHTML" 
+        data-hx-get="index.diving.services.partial.html">
+      </section>
+      <!-- Diving packages -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.diving.packages.partial.html"
+      ></section>
+      <!--Courses-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.courses.partial.html"
+      ></section>
+      <!--Gallery-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.gallery.partial.html"
+      ></section>
 
-<body>
-  <!--Unveil the Marvellous Undersea-->
-  <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.diving.services.partial.html"></section>
-  <!-- Diving packages -->
-  <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.diving.packages.partial.html">
-  </section>
-  <!--Courses-->
-  <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.courses.partial.html">
-  </section>
-  <!--Gallery-->
-  <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.gallery.partial.html">
-  </section>
-</body>
-
+      <!-- Contacts -->
+      <section
+        class="contacts"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.partial.html"
+      ></section>
+      <!-- Contacts Map -->
+      <div
+        class="contacts__map"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.map.partial.html"
+      ></div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <section
+        class="footer__content"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></section>
+    </footer>
+  </body>
 </html>
