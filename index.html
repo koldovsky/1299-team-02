@@ -18,26 +18,44 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header">
       <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.contact-bar.partial.html"
       ></div>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.navbar.partial.html"
+      ></div>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
+      ></section>
     </header>
     <main>
       <!--Unveil the Marvellous Undersea-->
-      <section 
-        data-hx-trigger="load" 
-        data-hx-swap="outerHTML" 
-        data-hx-get="index.diving.services.partial.html">
-      </section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.diving.services.partial.html"
+      ></section>
       <!-- Diving packages -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.diving.packages.partial.html"
       ></section>
+      <!--Destinations-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.destinations.partial.html"
+      ></section>
+
       <!--Courses-->
       <section
         data-hx-trigger="load"
