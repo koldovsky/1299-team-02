@@ -1,0 +1,7 @@
+.courses__image img {
+    width: 500px;
+    height: 200px;
+}
+.courses__description p {
+    color: red;
+}
