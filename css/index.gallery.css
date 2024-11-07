@@ -1,3 +1,11 @@
+.gallery__icon img {
+    max-width: 68px;
+}
+
+.gallery__list, .gallery__info {
+    text-align: center;
+}
+
 .gallery__image img {
-    margin-left: auto;
+    max-width: 600px;
 }
