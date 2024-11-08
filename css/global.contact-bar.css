@@ -1,0 +1,19 @@
+.header__contact-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+
+  background-color: var(--bg-color);
+}
+
+.header__social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__social-link {
+  width: 30px;
+}
