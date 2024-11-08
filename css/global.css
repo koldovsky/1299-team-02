@@ -1,16 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    scroll-behavior: smooth;
+  font-family: "Chivo", sans-serif;
+  scroll-behavior: smooth;
+  --text-color: #fff;
+  --h2-text-color: #ffffff;
+  --a-link-text-color: #ff5b00;
+  --p-text-color-description: #4886ae;
+  --bg-color: #000e24;
+  --background-body-color: #000e24;
+  --background-blocks-description-color: #0e2136;
+  --button-font-family: 'Chivo', sans-serif;
+  --button-text-decoration: none;
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header a {
+  color: var(--text-color);
 }
