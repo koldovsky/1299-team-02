@@ -32,3 +32,10 @@
 .gallery__description p {
   color: var(--p-text-color-description);
 }
+.gallery__list {
+    padding: 0 24px;
+}
+
+.gallery__image {
+    margin: 50px 0 0;
+}
