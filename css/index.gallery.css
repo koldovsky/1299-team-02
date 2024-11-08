@@ -33,14 +33,15 @@
   color: var(--p-text-color-description);
 }
 .gallery__list {
-    padding: 0 24px;
+
     display: flex;
     flex-wrap: wrap;
 }
 
 .gallery__image {
-    margin: 50px auto 0 auto;
+    margin: 50px 0 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
@@ -50,4 +51,5 @@
     width: 100%;
     max-width: 370px;
     min-height: 247px;
+    padding: 0 15px;
 }
