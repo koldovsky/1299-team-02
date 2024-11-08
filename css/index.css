@@ -1,6 +1,6 @@
-@import "global.css";
-@import "global.header.contact-bar.css";
-@import "global.header.nav.css";
+@import url(global.css);
+@import url(global.header.contact-bar.css);
+@import url(global.header.nav.css);
 @import url(index.courses.css);
 @import url(index.gallery.css);
 @import url(index.contacts.css);
