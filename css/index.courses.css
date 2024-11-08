@@ -6,15 +6,19 @@
     width: 100%;
 
 }
-.courses__info, .courses__show-more {
+
+.courses__info,
+.courses__show-more {
     width: 100%;
     text-align: center;
 
 }
+
 .courses__item {
     margin-left: auto;
     margin-right: auto;
 }
+
 .courses__item {
     max-width: 600px;
 }
