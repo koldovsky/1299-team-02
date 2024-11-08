@@ -1,7 +1,7 @@
 /*Markiian Harasym*/
-.contacts
+.contacts__map
 {
-    background-image: url('/img/index/contacts/index.contacts.shark-background.png');
+    background-image: url('/img/index/contacts/map.background.png');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
