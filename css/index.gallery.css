@@ -1,12 +1,17 @@
 .gallery-place {
-    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-body-color);
 }
 
 .gallery__icon img {
     max-width: 68px;
 }
-
-.gallery__list, .gallery__info {
-    text-align: center;
+.gallery__description {
+    h2 {
+        color: var(--h2-text-color);
+    }
+    p {
+        color: var( --p-text-color-description);
+    }
 }
-
