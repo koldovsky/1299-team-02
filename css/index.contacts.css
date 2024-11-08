@@ -1,1 +1,19 @@
 /*Markiian Harasym*/
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+.contacts
+{
+    background-image: url('/img/index/contacts/index.contacts.shark-background.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.contacts__logo
+{
+    width: 68px;
+}
+.contacts__title
+{
+    font-family: "Dosis", sans-serif;
+    font-size: 38px;
+    
+}
