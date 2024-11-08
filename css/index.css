@@ -1,2 +1,5 @@
 @import url(index.courses.css);
 @import url(index.gallery.css);
+@import "index.contacts.css";
+@import "index.contacts.map.css";
+@import "global.footer.css";
