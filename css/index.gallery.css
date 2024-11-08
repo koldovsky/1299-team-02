@@ -1,3 +1,7 @@
+.gallery-place {
+    max-width: 600px;
+}
+
 .gallery__icon img {
     max-width: 68px;
 }
@@ -6,6 +10,3 @@
     text-align: center;
 }
 
-.gallery__image img {
-    max-width: 600px;
-}

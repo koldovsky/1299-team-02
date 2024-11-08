@@ -13,6 +13,12 @@
   scroll-behavior: smooth;
   --text-color: #fff;
   --bg-color: #000e24;
+  --link-color: #ff5b00;
+  --background-body-color: #000e24;
+  --background-blocks-description-color: #0e2136;
+  --text-color-description: #4886ae;
+  --button-font-family: 'Chivo', sans-serif;
+  --button-text-decoration: none;
 }
 
 img {
