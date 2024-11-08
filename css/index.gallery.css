@@ -34,8 +34,19 @@
 }
 .gallery__list {
     padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery__image {
     margin: 50px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__image img {
+    width: 100%;
+    max-width: 370px;
+    min-height: 247px;
 }
