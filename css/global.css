@@ -11,8 +11,10 @@
 :root {
   font-family: "Chivo", sans-serif;
   scroll-behavior: smooth;
+  color: var(--p-text-color-description);
+  background-color: var(--background-body-color);
   --text-color: #fff;
-  --h2-text-color: #ffffff;
+  --h-text-color: #ffffff;
   --a-link-text-color: #ff5b00;
   --p-text-color-description: #4886ae;
   --bg-color: #000e24;
@@ -22,6 +24,10 @@
   --button-text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6{
+  color: var(--h-text-color);
+}
+
 img {
   display: block;
   width: 100%;
@@ -29,6 +35,7 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--a-link-text-color);
 }
 
 .header a {

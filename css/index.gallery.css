@@ -33,24 +33,24 @@
   color: var(--p-text-color-description);
 }
 .gallery__list {
-
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto 0 auto;
 }
 
 .gallery__image {
-    margin: 50px 0 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 50px 0 0;
+
 
 }
 
 .gallery__image img {
-    width: 100%;
     max-width: 370px;
-    max-height: 247px;
+    height: 247px;
     padding: 0 15px;
     object-fit: cover;
 }
