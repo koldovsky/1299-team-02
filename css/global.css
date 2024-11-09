@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 
 *,
 *::before,
@@ -15,17 +16,24 @@
   background-color: var(--background-body-color);
   --text-color: #fff;
   --h-text-color: #ffffff;
+  --button-color: #fff;
   --a-link-text-color: #ff5b00;
   --p-text-color-description: #4886ae;
   --bg-color: #000e24;
   --background-body-color: #000e24;
   --background-blocks-description-color: #0e2136;
   --button-font-family: 'Chivo', sans-serif;
+  --h4-font-family: 'Dosis', sans-serif;
   --button-text-decoration: none;
+  --button-border-color: #4480a7;
 }
 
 h1, h2, h3, h4, h5, h6{
   color: var(--h-text-color);
+}
+
+h2, h4{
+  font-family: var(--h4-font-family);
 }
 
 img {

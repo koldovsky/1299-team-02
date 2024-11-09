@@ -18,14 +18,33 @@
   grid-template-columns: 1fr minmax(320px, 800px) 1fr;
 }
 .courses__list {
-    grid-column: 2;
+  grid-column: 2;
 }
 .courses__item {
   background-color: var(--background-blocks-description-color);
+  margin: 30px 0;
 }
 
 .courses__description {
-  padding: 30px 5px;
+  padding: 0 25px;
+  text-align: left;
 }
 .courses__description h4 {
+  font-size: 1.2rem;
+  padding: 30px 0;
+}
+.courses__description p {
+  padding: 0 0 30px;
+}
+.courses__description a {
+  display: block;
+  padding: 0 0 30px;
+}
+
+.button {
+  border: 1px solid var(--button-border-color);
+  border-radius: 40px;
+  padding: 12px;
+  color: var(--button-color);
+
 }
