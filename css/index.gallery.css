@@ -50,6 +50,7 @@
 .gallery__image img {
     width: 100%;
     max-width: 370px;
-    min-height: 247px;
+    max-height: 247px;
     padding: 0 15px;
+    object-fit: cover;
 }
