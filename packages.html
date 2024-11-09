@@ -29,12 +29,28 @@
       data-hx-get="global.navbar.partial.html"
     ></div>
   </header>
-  <body></body>
+  <body>
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="packages.night-dives.partial.html"
+    ></div>
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="packages.3caves-3days.partial.html"
+    ></div>
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="packages.ready-diving.partial.html"
+    ></div>
+  </body>
   <footer>
-    <section
+    <div
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
-    ></section>
+    ></div>
   </footer>
 </html>
