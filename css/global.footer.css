@@ -1,10 +1,10 @@
 /*Markiian Harasym*/
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&display=swap");
-
 .footer {
   background-color: #000e24;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 15px;
   text-align: center;
 }
 .footer__container {
@@ -25,8 +25,13 @@
   text-align: center;
 }
 .footer__logo-image {
-  padding-top: 80px;
+  margin-top: 90px;
   width: 197px;
+}
+@media (min-width: 990px) {
+  .footer__logo-image {
+    margin-top: 40px;
+  }
 }
 .footer__nav {
   display: flex;
@@ -50,6 +55,7 @@
     color: #e7b900;
   }
 }
+
 @media (min-width: 990px) {
   .footer__nav {
     flex-direction: row;
@@ -58,7 +64,6 @@
     align-items: center;
   }
 }
-
 .footer__social {
   display: flex;
   justify-content: center;
@@ -89,7 +94,7 @@
 
 .footer__copyrigth {
   text-align: center;
-  padding: 20px;
+
   color: #fff;
   font-size: 12px;
   font-family: "Chivo", sans-serif;
@@ -97,14 +102,26 @@
 
 .copy__message {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 15px;
 }
-
-@media (min-width: 767px) {
+.copy__message__rights {
+  display: block;
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
   .copy__message {
     display: inline-flex;
     white-space: nowrap;
     justify-content: center;
+  }
+  .copy__message__rights {
+    display: inline-flex;
+    white-space: nowrap;
+    justify-content: center;
+  }
+  .footer__menu-link {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
   }
 }
