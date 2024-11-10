@@ -19,7 +19,7 @@
   --background-body-color: #000e24;
   --background-blocks-description-color: #0e2136;
   --button-font-family: "Chivo", sans-serif;
-  --h4-font-family: "Dosis", sans-serif;
+  --heading-font-family: "Dosis", sans-serif;
   --button-text-decoration: none;
   --button-border-color: #4480a7;
   --primary-button-color: #ff5b00;
@@ -39,9 +39,10 @@ h6 {
   color: var(--h-text-color);
 }
 
+h1,
 h2,
 h4 {
-  font-family: var(--h4-font-family);
+  font-family: var(--heading-font-family);
 }
 
 img {
