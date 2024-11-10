@@ -1,13 +1,10 @@
 .diving-packages {
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(../img/diving-packages/diving-packages-background.png);
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/diving-packages/diving-packages-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* Заповнює контейнер */
     background-position: center;
-
-
 }
 
 
@@ -36,7 +33,6 @@
     margin: 10px auto;
     line-height: 1.5;
 }
-
 
 .diving-packages__content {
     display: flex;
