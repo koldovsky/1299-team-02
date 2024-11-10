@@ -1,8 +1,9 @@
 .header__contact-bar {
+  visibility: hidden;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 15px;
 
   background-color: var(--bg-color);
 }
@@ -12,8 +13,15 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  padding: 6px 0;
 }
 
 .header__social-link {
   width: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .header__contact-bar {
+    visibility: visible;
+  }
 }
