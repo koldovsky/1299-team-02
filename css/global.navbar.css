@@ -23,6 +23,11 @@
 
 .header__menu-link {
   font-size: 14px;
+  transition: color 0.3s;
+}
+
+.header__menu-link:hover {
+  color: var(--link--hover-color);
 }
 
 @media (min-width: 992px) {
