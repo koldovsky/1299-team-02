@@ -19,7 +19,7 @@
 .equipment__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .equipment__item {
@@ -55,7 +55,6 @@
   .equipment__list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
   .equipment__item {
@@ -75,5 +74,11 @@
 
   .equipment__item:nth-child(2) {
     flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 992px) {
+  .equipment__content {
+    padding: 60px 70px;
   }
 }
