@@ -1,51 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diving Club</title>
+    <link
+      rel="shortcut icon"
+      href="img/global/icon.svg"
+      type="image/image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diving Club</title>
-  <link rel="shortcut icon" href="img/global/icon.svg" type="image/image/svg+xml" />
-  <link rel="stylesheet" href="css/index.css" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.contact-bar.partial.html"></div>
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.navbar.partial.html"></div>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></section>
-  </header>
-  <main>
-    <!--Unveil the Marvellous Undersea-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.diving.services.partial.html"></section>
-    <!-- Explore Phuket -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.explore-phuket.partial.html"></section>
-    <!-- Why choose us? -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.why-choose-us.partial.html"></section>
-    <!-- Diving packages -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.diving.packages.partial.html"></section>
-    <!--Destinations-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.destinations.partial.html"></section>
-    <!--Scuba Diving Course-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.scuba-course.partial.html"></section>
-    <!--Courses-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.courses.partial.html"></section>
-    <!--Gallery-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.gallery.partial.html"></section>
-    <!-- Contacts -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.contacts.partial.html"></section>
-    <!-- Contacts Map -->
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.contacts.map.partial.html"></div>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></section>
-  </footer>
-</body>
-
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.contact-bar.partial.html"
+      ></div>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header.partial.html"
+      ></section>
+    </header>
+    <main>
+      <!--Unveil the Marvellous Undersea-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.diving.services.partial.html"
+      ></section>
+      <!-- Explore Phuket -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.explore-phuket.partial.html"
+      ></section>
+      <!-- Why choose us? -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.why-choose-us.partial.html"
+      ></section>
+      <!-- Diving packages -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.diving.packages.partial.html"
+      ></section>
+      <!--Destinations-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.destinations.partial.html"
+      ></section>
+      <!--Scuba Diving Course-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.scuba-course.partial.html"
+      ></section>
+      <!--Courses-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.courses.partial.html"
+      ></section>
+      <!--Gallery-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.gallery.partial.html"
+      ></section>
+      <!-- Contacts -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.partial.html"
+      ></section>
+      <!-- Contacts Map -->
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.map.partial.html"
+      ></div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></section>
+    </footer>
+  </body>
 </html>

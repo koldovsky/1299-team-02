@@ -1,3 +1,11 @@
+.header__header {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../img/index/hero/index.header-hero-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .header__hero {
   text-align: center;
 }
@@ -5,7 +13,10 @@
 .header__hero__title {
   font-size: 111px;
   word-wrap: break-word;
+  padding-top: 110px;
 }
 
 .header__hero__text {
+  font-size: 20px;
+  color: var(--h-text-color);
 }
