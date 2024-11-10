@@ -9,6 +9,8 @@
 
   border: 1px solid;
   border-radius: 40px;
+
+  transition: color 0.4s, background-color 0.4s, border-color 0.4s;
 }
 
 .button--primary {
@@ -16,7 +18,17 @@
   border-color: var(--primary-button-color);
 }
 
+.button--primary:hover {
+  background-color: var(--primary-button-hover-color);
+  border-color: var(--primary-button-hover-color);
+}
+
 .button--secondary {
   background-color: transparent;
   border-color: var(--button-border-color);
+}
+
+.button--secondary:hover {
+  background-color: var(--secondary-button-hover-color);
+  border-color: var(--secondary-button-hover-color);
 }

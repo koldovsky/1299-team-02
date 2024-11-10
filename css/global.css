@@ -23,6 +23,8 @@
   --button-text-decoration: none;
   --button-border-color: #4480a7;
   --primary-button-color: #ff5b00;
+  --primary-button-hover-color: #4886ae;
+  --secondary-button-hover-color: var(--primary-button-color);
 
   font-family: "Chivo", sans-serif;
   scroll-behavior: smooth;
