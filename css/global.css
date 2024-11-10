@@ -26,6 +26,7 @@
   --primary-button-hover-color: #4886ae;
   --secondary-button-hover-color: var(--primary-button-color);
   --link--hover-color: #e7b900;
+  --card--background-color: #0e2035;
 
   font-family: "Chivo", sans-serif;
   scroll-behavior: smooth;
@@ -44,6 +45,7 @@ h6 {
 
 h1,
 h2,
+h3,
 h4 {
   font-family: var(--heading-font-family);
 }
