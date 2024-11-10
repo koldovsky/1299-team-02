@@ -10,13 +10,9 @@
 }
 
 :root {
-  font-family: "Chivo", sans-serif;
-  scroll-behavior: smooth;
-  color: var(--p-text-color-description);
-  background-color: var(--background-body-color);
   --text-color: #fff;
   --h-text-color: #ffffff;
-  --button-color: #fff;
+  --button-text-color: #fff;
   --a-link-text-color: #ff5b00;
   --p-text-color-description: #4886ae;
   --bg-color: #000e24;
@@ -26,6 +22,12 @@
   --h4-font-family: "Dosis", sans-serif;
   --button-text-decoration: none;
   --button-border-color: #4480a7;
+  --primary-button-color: #ff5b00;
+
+  font-family: "Chivo", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--p-text-color-description);
+  background-color: var(--background-body-color);
 }
 
 h1,
@@ -50,6 +52,10 @@ img {
 a {
   text-decoration: none;
   color: var(--a-link-text-color);
+}
+
+ul {
+  list-style: none;
 }
 
 .header a {

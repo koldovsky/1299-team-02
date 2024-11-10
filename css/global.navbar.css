@@ -1,0 +1,29 @@
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+}
+
+.header__logo-image {
+  width: 187px;
+  height: auto;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  font-weight: 700;
+}
+
+.header__menu-item {
+}
+
+.header__menu-link {
+  font-size: 14px;
+}

@@ -1,4 +1,5 @@
 @import url(global.css);
+@import url(controls.css);
 @import url(global.contact-bar.css);
 @import url(global.navbar.css);
 @import url(index.diving.services.css);
@@ -8,4 +9,4 @@
 @import url(index.contacts.map.css);
 @import url(index.destinations.css);
 @import url(global.footer.css);
-@import url(index.diving.packages.css)
+@import url(index.diving.packages.css);

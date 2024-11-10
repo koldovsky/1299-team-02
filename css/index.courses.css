@@ -40,11 +40,3 @@
   display: block;
   padding: 0 0 30px;
 }
-
-.button {
-  border: 1px solid var(--button-border-color);
-  border-radius: 40px;
-  padding: 12px;
-  color: var(--button-color);
-
-}
