@@ -63,6 +63,11 @@ ul {
   color: var(--text-color);
 }
 
+/* маска аквалангіста */
+.aqualung-mask__icon {
+  max-width: 48.5px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -73,10 +78,15 @@ ul {
   .container {
     padding: 0 32px;
   }
+  
+  .aqualung-mask__icon {
+    max-width: 68px;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     padding: 0 40px;
   }
+
 }
