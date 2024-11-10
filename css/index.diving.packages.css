@@ -3,16 +3,23 @@
     max-width: 1000px;
     padding: 20px;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
 }
 
 .diving-packages__title img {
     width: 100px;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
 }
 
-h2 {
+.diving-packages__title h2 {
     font-size: 60px;
     text-align: center;
-  }
+}
+
+.diving-packages__title p {
+    max-width: 450px;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 1.5;
+}
