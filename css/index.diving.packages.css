@@ -1,6 +1,18 @@
-.diving-packages__icon {
-    max-width: 170px;
+.diving-packages__title {
+    width: 50%;
+    max-width: 1000px;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;   
 }
+
+.diving-packages__title img {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+  }
