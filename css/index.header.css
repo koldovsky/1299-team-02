@@ -1,0 +1,11 @@
+.header__hero {
+  text-align: center;
+}
+
+.header__hero__title {
+  font-size: 111px;
+  word-wrap: break-word;
+}
+
+.header__hero__text {
+}
