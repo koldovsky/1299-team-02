@@ -1,5 +1,5 @@
 .header__header {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 14, 36, 1)),
     url("../img/index/hero/index.header-hero-background.png");
   background-size: cover;
   background-position: center;
