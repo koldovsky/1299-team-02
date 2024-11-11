@@ -1,5 +1,6 @@
 .instructors {
-  background: url(../img/about-us/instructors/instructors-bgr.png);
+  background: linear-gradient(rgb(0, 14, 36, 1), rgba(0, 0, 0, 0)),
+    url(../img/about-us/instructors/instructors-bgr.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +22,8 @@
 
 .instructors__list {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -50,4 +52,25 @@
 .instructors__bio {
   color: var(--text-color);
   line-height: 1.5;
+}
+
+@media (min-width: 480px) {
+  .instructors__list {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .instructors__item {
+    width: calc(50% - 25px);
+  }
+}
+
+@media (min-width: 992px) {
+  .instructors__list {
+    flex-wrap: nowrap;
+  }
+
+  .instructors__item {
+    width: calc(33.3333% - 25px);
+  }
 }
