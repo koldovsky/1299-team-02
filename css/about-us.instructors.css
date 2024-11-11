@@ -1,0 +1,53 @@
+.instructors {
+  background: url(../img/about-us/instructors/instructors-bgr.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.instructors .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.instructors__title {
+  font-size: 38px;
+  letter-spacing: -0.8px;
+  margin-bottom: 45px;
+}
+
+.instructors__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.instructors__item {
+  background-color: var(--card-background-color-opacity);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.instructors__photo {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.instructors__name {
+  color: var(--card-heading-color);
+  font-size: 22px;
+}
+
+.instructors__bio {
+  color: var(--text-color);
+  line-height: 1.5;
+}
