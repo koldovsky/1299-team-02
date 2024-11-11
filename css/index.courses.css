@@ -98,7 +98,7 @@
 .button--secondary {
   border: 2px solid #4886ae;
   font-size: 0.69;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 .button--secondary:hover {
   background-color: var(--secondary-button-hover-color);
