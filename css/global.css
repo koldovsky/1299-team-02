@@ -67,7 +67,7 @@ ul {
   list-style: none;
 }
 
-.header a {
+header a {
   color: var(--text-color);
 }
 
