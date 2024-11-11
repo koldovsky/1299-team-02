@@ -52,7 +52,6 @@
   }
 }
 
-/* Вирівнювання з правого боку на десктопі */
 @media (min-width: 768px) {
   .contacts__form-container {
     margin-left: auto;
