@@ -1,29 +1,32 @@
-/*Markiian Harasym*/
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 .contacts {
-  background-image: url("https://koldovsky.github.io/1299-team-02/img/index/contacts/index.contacts.shark-background.png");
+  background-image: url("../img/index/contacts/index.contacts.shark-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .contacts__logo {
   width: 68px;
 }
+
 .contacts__title {
   font-family: "Dosis", sans-serif;
   font-size: 38px;
-  color: #fff;
+  color: var(--h-text-color);
 }
+
 .contacts__description {
   font-size: 20px;
-  color: #4886ae;
+  color: var(--p-text-color-description);
 }
+
 .contacts__details-label {
   font-size: 20px;
   font-weight: bold;
-  color: #4886ae;
+  color: var(--p-text-color-description);
 }
+
 .contacts__details-info {
   font-size: 16px;
-  color: #fff;
+  color: var(--text-color);
 }
