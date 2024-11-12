@@ -16,6 +16,7 @@
   width: 100%;
   min-height: 450px;
 }
+
 .contacts__logo {
   width: 48px;
 }
@@ -37,9 +38,11 @@
 .contacts__details {
   margin-top: 25px;
 }
+
 .contacts__details-block {
   margin-bottom: 16px;
 }
+
 .contacts__details-label {
   font-size: 20px;
   font-weight: bold;
@@ -59,6 +62,7 @@
   min-height: 370px;
   background-color: var(--form-background-color);
 }
+
 .contacts__form {
   display: flex;
   flex-direction: column;
@@ -105,16 +109,19 @@
 .contacts__button:hover {
   background-color: var(--form-button-second-color);
 }
+
 @media (max-width: 767px) {
   .contacts__block {
     padding: 0 0 18px 0;
   }
+
   .contacts__form-container {
     margin: 0 auto;
     margin-top: 50px;
     min-width: 272px;
   }
 }
+
 @media (min-width: 768px) {
   .contacts__block {
     max-width: 1170px;
@@ -122,10 +129,12 @@
     justify-content: center;
     align-items: center;
   }
+
   .contacts__form-container {
     margin-left: auto;
     margin-right: 0;
   }
+
   .contacts__form {
     max-width: 600px;
   }

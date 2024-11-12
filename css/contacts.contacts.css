@@ -1,104 +1,106 @@
 .contacts {
-    background: linear-gradient(
+  background: linear-gradient(
       to bottom,
       rgba(0, 14, 36, 1),
       rgba(0, 14, 36, 0.7),
       rgba(0, 14, 36, 0.2)
     ),
-      url("../img/index/contacts/index.contacts.shark-background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .contacts__logo {
-    width: 68px;
-  }
-  
-  .contacts__title {
-    font-family: "Dosis", sans-serif;
-    font-size: 38px;
-    color: var(--h-text-color);
-  }
-  
-  .contacts__description {
-    font-size: 20px;
-    color: var(--p-text-color-description);
-  }
-  
-  .contacts__details-label {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--p-text-color-description);
-  }
-  
-  .contacts__details-info {
-    font-size: 16px;
-    color: var(--text-color);
-  }
-  
+    url("../img/index/contacts/index.contacts.shark-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacts__logo {
+  width: 68px;
+}
+
+.contacts__title {
+  font-family: "Dosis", sans-serif;
+  font-size: 38px;
+  color: var(--h-text-color);
+}
+
+.contacts__description {
+  font-size: 20px;
+  color: var(--p-text-color-description);
+}
+
+.contacts__details-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--p-text-color-description);
+}
+
+.contacts__details-info {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.contacts__form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 370px;
+  background-color: var(--form-background-color);
+  max-width: 272px;
+  margin-top: 50px;
+}
+
+@media (max-width: 767px) {
   .contacts__form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 370px;
-    background-color: var(--form-background-color);
-    max-width: 272px;
-    margin-top: 50px;
+    margin: 0 auto;
   }
-  @media (max-width: 767px) {
-    .contacts__form-container {
-      margin: 0 auto;
-    }
+}
+
+@media (min-width: 768px) {
+  .contacts__form-container {
+    margin-left: auto;
+    margin-right: 0;
   }
-  
-  @media (min-width: 768px) {
-    .contacts__form-container {
-      margin-left: auto;
-      margin-right: 0;
-    }
-  }
-  .contacts__form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 300px;
-    align-items: center;
-  }
-  
-  .contacts__input {
-    padding: 15px;
-    border: none;
-    border-radius: 25px;
-    background-color: var(--form-fields-color);
-    color: var(--text-color);
-    outline-color: var(--form-fields-border-color);
-    font-size: 16px;
-    max-width: 162px;
-    max-height: 44px;
-    font-size: 12px;
-    font-family: "Chivo", sans-serif;
-  }
-  
-  .contacts__input::placeholder {
-    color: var(--form-button-border-color); 
-  }
-  
-  .contacts__button {
-    padding: 15px;
-    border: none;
-    border-radius: 25px;
-    background-color: var(--primary-button-color);
-    color: var(--text-color);
-    font-size: 11px;
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
-    width: 160px;
-    height: 41px;
-    font-family: "Chivo", sans-serif;
-  }
-  
-  .contacts__button:hover {
-    background-color: var(--form-button-second-color);
-  }
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  align-items: center;
+}
+
+.contacts__input {
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--form-fields-color);
+  color: var(--text-color);
+  outline-color: var(--form-fields-border-color);
+  font-size: 16px;
+  max-width: 162px;
+  max-height: 44px;
+  font-size: 12px;
+  font-family: "Chivo", sans-serif;
+}
+
+.contacts__input::placeholder {
+  color: var(--form-button-border-color);
+}
+
+.contacts__button {
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--primary-button-color);
+  color: var(--text-color);
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 160px;
+  height: 41px;
+  font-family: "Chivo", sans-serif;
+}
+
+.contacts__button:hover {
+  background-color: var(--form-button-second-color);
+}

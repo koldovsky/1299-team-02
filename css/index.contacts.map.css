@@ -25,6 +25,7 @@
   height: auto;
   overflow: hidden;
 }
+
 .map__info {
   display: flex;
   justify-content: center;

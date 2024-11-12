@@ -120,11 +120,13 @@
     white-space: nowrap;
     justify-content: center;
   }
+
   .copy__message__rights {
     display: inline-flex;
     white-space: nowrap;
     justify-content: center;
   }
+
   .footer__menu-link {
     margin-top: 5px !important;
     margin-bottom: 5px !important;
