@@ -35,6 +35,7 @@
   --form-fields-information: rgb(149 156 167);
   --form-button-second-color: #4886ae;
   --form-fields-border-color: #3b99fc;
+  --form-button-border-color: rgba(255, 255, 255, 0.7);
 
   font-family: "Chivo", sans-serif;
   scroll-behavior: smooth;

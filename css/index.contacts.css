@@ -81,7 +81,7 @@
 }
 
 .contacts__input::placeholder {
-  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+  color: var(--form-button-border-color); 
 }
 
 .contacts__button {
