@@ -9,27 +9,59 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__info{
+  
+}
+.contacts__block
+{
+  padding-bottom: 50px;
+  max-width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px)
+{
+  .contacts__block{
+    padding: 0 24px 0 24px ;
+  }
 }
 
 .contacts__logo {
-  width: 68px;
+  width: 48px;
 }
 
 .contacts__title {
   font-family: "Dosis", sans-serif;
   font-size: 38px;
   color: var(--h-text-color);
+  margin-top: 20px;
 }
 
 .contacts__description {
   font-size: 20px;
   color: var(--p-text-color-description);
+  margin-top: 25px;
+  line-height: 30px;
 }
 
+.contacts__details
+{
+  margin-top: 25px;
+}
+.contacts__details-block
+{
+  margin-bottom: 16px;
+}
 .contacts__details-label {
   font-size: 20px;
   font-weight: bold;
   color: var(--p-text-color-description);
+  margin-bottom: 5px;
 }
 
 .contacts__details-info {
@@ -44,11 +76,12 @@
   min-height: 370px;
   background-color: var(--form-background-color);
   max-width: 272px;
-  margin-top: 50px;
 }
 @media (max-width: 767px) {
   .contacts__form-container {
     margin: 0 auto;
+    margin-top: 50px;
+    min-width: 272px;
   }
 }
 
@@ -56,13 +89,15 @@
   .contacts__form-container {
     margin-left: auto;
     margin-right: 0;
+  }  
+  .contacts__form{
+    max-width: 600px;
   }
 }
 .contacts__form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: 300px;
+  width: 272px;
   align-items: center;
 }
 
@@ -78,6 +113,9 @@
   max-height: 44px;
   font-size: 12px;
   font-family: "Chivo", sans-serif;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  
 }
 
 .contacts__input::placeholder {
@@ -97,6 +135,7 @@
   width: 160px;
   height: 41px;
   font-family: "Chivo", sans-serif;
+  margin-top: 44px;
 }
 
 .contacts__button:hover {
