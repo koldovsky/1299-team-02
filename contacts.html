@@ -31,8 +31,16 @@
   </header>
   <body>
     <main>
-      <section></section>
-      <section></section>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.map.partial.html"
+      ></div>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.partial.html"
+      ></section>
     </main>
   </body>
   <footer>
