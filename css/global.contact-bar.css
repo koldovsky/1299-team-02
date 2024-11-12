@@ -15,11 +15,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding: 6px 0;
   }
 
   .header__social-link {
     width: 30px;
+  }
+
+  .header__social-link:hover {
+    opacity: 0.7;
   }
 }

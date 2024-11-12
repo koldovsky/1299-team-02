@@ -11,6 +11,7 @@
       type="image/image/svg+xml"
     />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/packages.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -30,6 +31,18 @@
     ></div>
   </header>
   <body>
+    <!-- Olekdandr Drozhcha: Explore Phuket -->
+    <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="packages.explore-phuket.partial.html"
+    ></section>
+    <!-- Olekdandr Drozhcha: 3 Days - 9 Dives -->
+    <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="packages.three-days-nine-dives.partial.html"
+    ></section>
     <div
       data-hx-trigger="load"
       data-hx-swap="outerHTML"

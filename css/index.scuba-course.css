@@ -1,0 +1,57 @@
+.scuba-course {
+  display: grid;
+  align-items: start;
+  gap: 30px;
+}
+.scuba-course__image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.scuba-course__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scuba-course__title {
+  font-size: 38px;
+}
+.scuba-course__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+.scuba-course__description {
+  line-height: 1.5;
+  color: var(--p-text-color-description);
+}
+.scuba-course__button {
+  color: var(--button-text-color);
+}
+.scuba-course__button-wrapper {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  font-weight: bold;
+  border: 1px solid var(--button-border-color);
+  border-radius: 25px;
+  transition: background-color 0.35s ease;
+}
+.scuba-course__button-wrapper:hover {
+  border: 1px solid var(--primary-button-color);
+  background-color: var(--primary-button-color);
+}
+@media (min-width: 768px) {
+  .scuba-course {
+    grid-template-columns: 1fr 1fr;
+  }
+  .scuba-course__title {
+    font-size: 50px;
+  }
+}
