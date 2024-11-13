@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 
 *,
 *::before,
@@ -10,30 +10,52 @@
 }
 
 :root {
-  font-family: "Chivo", sans-serif;
-  scroll-behavior: smooth;
-  color: var(--p-text-color-description);
-  background-color: var(--background-body-color);
   --text-color: #fff;
   --h-text-color: #ffffff;
-  --button-color: #fff;
+  --button-text-color: #fff;
   --a-link-text-color: #ff5b00;
   --p-text-color-description: #4886ae;
   --bg-color: #000e24;
   --background-body-color: #000e24;
   --background-blocks-description-color: #0e2136;
-  --button-font-family: 'Chivo', sans-serif;
-  --h4-font-family: 'Dosis', sans-serif;
+  --button-font-family: "Chivo", sans-serif;
+  --heading-font-family: "Dosis", sans-serif;
   --button-text-decoration: none;
   --button-border-color: #4480a7;
+  --primary-button-color: #ff5b00;
+  --primary-button-hover-color: #4886ae;
+  --secondary-button-hover-color: var(--primary-button-color);
+  --link--hover-color: #e7b900;
+  --card--background-color: #0e2035;
+  --links-footer-border-color: #417aa1;
+  --card-background-color-opacity: rgba(18, 36, 58, 0.43);
+  --card-heading-color: #e7b900;
+  --form-background-color: #112239;
+  --form-fields-color: #2b3a4f;
+  --form-fields-information: rgb(149 156 167);
+  --form-button-second-color: #4886ae;
+  --form-fields-border-color: #3b99fc;
+
+  font-family: "Chivo", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--p-text-color-description);
+  background-color: var(--background-body-color);
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--h-text-color);
 }
 
-h2, h4{
-  font-family: var(--h4-font-family);
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font-family);
 }
 
 img {
@@ -41,11 +63,55 @@ img {
   width: 100%;
 }
 
+p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+}
+
 a {
   text-decoration: none;
   color: var(--a-link-text-color);
 }
 
-.header a {
+ul {
+  list-style: none;
+}
+
+header a {
   color: var(--text-color);
+}
+
+/* маска аквалангіста */
+.aqualung-mask__icon {
+  max-width: 48.5px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 24px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .aqualung-mask__icon {
+    max-width: 68px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
 }

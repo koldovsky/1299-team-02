@@ -1,12 +1,10 @@
-/*Markiian Harasym*/
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&display=swap");
-
 .footer {
-  background-color: #000e24;
-  padding: 40px 0;
+  background-color: var(--bg-color);
+  padding-top: 40px;
+  padding-bottom: 15px;
   text-align: center;
 }
+
 .footer__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -15,26 +13,36 @@
   align-items: center;
   padding-bottom: 15px;
 }
+
 .footer__menu__panel {
   width: 272px;
 }
+
 .footer__logo__container {
   width: 272px;
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 .footer__logo-image {
-  padding-top: 80px;
+  margin-top: 90px;
   width: 197px;
 }
+
+@media (min-width: 990px) {
+  .footer__logo-image {
+    margin-top: 40px;
+  }
+}
+
 .footer__nav {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 
   .footer__menu-link {
-    color: #fff;
+    color: var(--text-color);
     font-family: "Chivo", sans-serif;
     font-size: medium;
     justify-content: center;
@@ -47,9 +55,10 @@
   }
 
   .footer__menu-link:hover {
-    color: #e7b900;
+    color: var(--link--hover-color);
   }
 }
+
 @media (min-width: 990px) {
   .footer__nav {
     flex-direction: row;
@@ -73,38 +82,51 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid #417aa1;
+  border: 1px solid var(--links-footer-border-color);
   background-color: transparent;
   transition: background-color 0.3s, border-color 0.3s;
 }
+
 .footer__social-link img {
   width: 24px;
   height: 24px;
 }
 
 .footer__social-link:hover {
-  background-color: #417aa1;
-  border-color: #417aa1;
+  background-color: var(--links-footer-border-color);
+  border-color: var(--links-footer-border-color);
 }
 
 .footer__copyrigth {
   text-align: center;
-  padding: 20px;
-  color: #fff;
+
+  color: var(--text-color);
   font-size: 12px;
   font-family: "Chivo", sans-serif;
 }
 
 .copy__message {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 15px;
 }
-
-@media (min-width: 767px) {
+.copy__message__rights {
+  display: block;
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
   .copy__message {
     display: inline-flex;
     white-space: nowrap;
     justify-content: center;
+  }
+  .copy__message__rights {
+    display: inline-flex;
+    white-space: nowrap;
+    justify-content: center;
+  }
+  .footer__menu-link {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
   }
 }

@@ -1,0 +1,47 @@
+.header__header {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 14, 36, 1)),
+    url("../img/index/hero/index.header-hero-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__hero {
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.header__hero__title {
+  font-size: 111px;
+  word-wrap: break-word;
+  letter-spacing: -2.22px;
+  line-height: 135px;
+  margin-bottom: 36px;
+}
+
+.header__hero__text {
+  font-size: 20px;
+  color: var(--h-text-color);
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.header__hero .button--primary {
+  font-size: 12px;
+  padding: 21px 34px;
+}
+
+@media (min-width: 768px) {
+  .header__hero {
+    padding-top: 190px;
+    padding-bottom: 138px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__hero {
+    padding-top: 250px;
+    padding-bottom: 175px;
+  }
+}

@@ -1,1 +1,45 @@
-<!-- Markiian Harasym -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts Page | Diving club Template</title>
+    <link
+      rel="shortcut icon"
+      href="img/global/icon.svg"
+      type="image/image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/contacts.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <header>
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.contact-bar.partial.html"
+    ></div>
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.navbar.partial.html"
+    ></div>
+  </header>
+  <body>
+    <main>
+      <section></section>
+      <section></section>
+    </main>
+  </body>
+  <footer>
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></div>
+  </footer>
+</html>

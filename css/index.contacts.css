@@ -1,29 +1,141 @@
-/*Markiian Harasym*/
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 .contacts {
-  background-image: url("https://koldovsky.github.io/1299-team-02/img/index/contacts/index.contacts.shark-background.png");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 14, 36, 1),
+      rgba(0, 14, 36, 0.7),
+      rgba(0, 14, 36, 0.2)
+    ),
+    url("../img/index/contacts/index.contacts.shark-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  width: 100%;
+  min-height: 450px;
 }
+
 .contacts__logo {
-  width: 68px;
+  width: 48px;
 }
+
 .contacts__title {
   font-family: "Dosis", sans-serif;
   font-size: 38px;
-  color: #fff;
+  color: var(--h-text-color);
+  margin-top: 20px;
 }
+
 .contacts__description {
   font-size: 20px;
-  color: #4886ae;
+  color: var(--p-text-color-description);
+  margin-top: 25px;
+  line-height: 30px;
 }
+
+.contacts__details {
+  margin-top: 25px;
+}
+
+.contacts__details-block {
+  margin-bottom: 16px;
+}
+
 .contacts__details-label {
   font-size: 20px;
   font-weight: bold;
-  color: #4886ae;
+  color: var(--p-text-color-description);
+  margin-bottom: 5px;
 }
+
 .contacts__details-info {
   font-size: 16px;
-  color: #fff;
+  color: var(--text-color);
+}
+
+.contacts__form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 370px;
+  background-color: var(--form-background-color);
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  min-width: 272px;
+  align-items: center;
+}
+
+.contacts__input {
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--form-fields-color);
+  color: var(--text-color);
+  outline-color: var(--form-fields-border-color);
+  font-size: 16px;
+  max-width: 162px;
+  max-height: 44px;
+  font-size: 12px;
+  font-family: "Chivo", sans-serif;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.contacts__input::placeholder {
+  color: var(--form-button-border-color);
+}
+
+.contacts__button {
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--primary-button-color);
+  color: var(--text-color);
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 160px;
+  height: 41px;
+  font-family: "Chivo", sans-serif;
+  margin-top: 44px;
+}
+
+.contacts__button:hover {
+  background-color: var(--form-button-second-color);
+}
+
+@media (max-width: 767px) {
+  .contacts__block {
+    padding: 0 0 18px 0;
+  }
+
+  .contacts__form-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    min-width: 272px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__block {
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts__form-container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .contacts__form {
+    max-width: 600px;
+  }
 }
