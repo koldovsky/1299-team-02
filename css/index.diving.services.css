@@ -1,0 +1,24 @@
+.diving-services__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .diving-services__title {
+    font-size: 40px;
+  }
+
+  .diving-services__school {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.diving-services__image {
+    width:270px;
+    height: 150px;
+}
