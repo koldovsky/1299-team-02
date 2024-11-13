@@ -29,7 +29,7 @@
 
 .instructors__item {
   background-color: var(--card-background-color-opacity);
-  padding: 30px;
+  padding: 43px 27px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +50,7 @@
 }
 
 .instructors__bio {
+  font-size: 16px;
   color: var(--text-color);
   line-height: 1.5;
 }
@@ -65,6 +66,17 @@
   }
 }
 
+@media (min-width: 768px) {
+  .instructors__item {
+    padding: 52px 28px;
+  }
+
+  .instructors__photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 @media (min-width: 992px) {
   .instructors__list {
     flex-wrap: nowrap;
@@ -72,5 +84,7 @@
 
   .instructors__item {
     width: calc(33.3333% - 25px);
+
+    padding: 70px 30px;
   }
 }
