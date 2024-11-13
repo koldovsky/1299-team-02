@@ -9,10 +9,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px;
+  padding: 24px;
   width: 100%;
   min-height: 450px;
   padding-bottom: 90px;
@@ -25,7 +28,6 @@
   height: auto;
   overflow: hidden;
 }
-
 .map__info {
   display: flex;
   justify-content: center;

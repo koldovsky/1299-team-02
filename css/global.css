@@ -35,7 +35,6 @@
   --form-fields-information: rgb(149 156 167);
   --form-button-second-color: #4886ae;
   --form-fields-border-color: #3b99fc;
-  --form-button-border-color: rgba(255, 255, 255, 0.7);
 
   font-family: "Chivo", sans-serif;
   scroll-behavior: smooth;
@@ -57,10 +56,6 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font-family);
-}
-
-h2 {
-  font-size: 2.1rem;
 }
 
 img {
@@ -99,17 +94,7 @@ header a {
   padding: 0px 24px;
 }
 
-@media (min-width: 479px) {
-  h2 {
-    font-size: 2.3rem;
-  }
-}
-
 @media (min-width: 768px) {
-  h2 {
-    font-size: 2.5rem;
-  }
-
   .container {
     padding: 0 32px;
   }
