@@ -1,0 +1,16 @@
+.diving-services__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.diving-services__title {
+  margin: 15px auto 18px auto;
+}
+
+.diving-services__school,
+.diving-services__tours {
+  display: grid;
+}
