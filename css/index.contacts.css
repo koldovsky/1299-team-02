@@ -1,29 +1,53 @@
 .contacts {
-  background-image: url("../img/index/contacts/index.contacts.shark-background.png");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 14, 36, 1),
+      rgba(0, 14, 36, 0.7),
+      rgba(0, 14, 36, 0.2)
+    ),
+    url("../img/index/contacts/index.contacts.shark-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  width: 100%;
+  min-height: 450px;
 }
 
 .contacts__logo {
-  width: 68px;
+  width: 48px;
 }
 
 .contacts__title {
   font-family: "Dosis", sans-serif;
   font-size: 38px;
   color: var(--h-text-color);
+  margin-top: 20px;
 }
 
 .contacts__description {
   font-size: 20px;
   color: var(--p-text-color-description);
+  margin-top: 25px;
+  line-height: 30px;
+}
+
+.contacts__details {
+  margin-top: 25px;
+}
+
+.contacts__details-block {
+  margin-bottom: 16px;
 }
 
 .contacts__details-label {
   font-size: 20px;
   font-weight: bold;
   color: var(--p-text-color-description);
+  margin-bottom: 5px;
 }
 
 .contacts__details-info {
@@ -37,27 +61,12 @@
   align-items: center;
   min-height: 370px;
   background-color: var(--form-background-color);
-  max-width: 272px;
-  margin-top: 50px;
-}
-@media (max-width: 767px) {
-  .contacts__form-container {
-    margin: 0 auto;
-  }
 }
 
-/* Вирівнювання з правого боку на десктопі */
-@media (min-width: 768px) {
-  .contacts__form-container {
-    margin-left: auto;
-    margin-right: 0;
-  }
-}
 .contacts__form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: 300px;
+  min-width: 272px;
   align-items: center;
 }
 
@@ -73,10 +82,12 @@
   max-height: 44px;
   font-size: 12px;
   font-family: "Chivo", sans-serif;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .contacts__input::placeholder {
-  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+  color: var(--form-button-border-color);
 }
 
 .contacts__button {
@@ -92,8 +103,39 @@
   width: 160px;
   height: 41px;
   font-family: "Chivo", sans-serif;
+  margin-top: 44px;
 }
 
 .contacts__button:hover {
   background-color: var(--form-button-second-color);
+}
+
+@media (max-width: 767px) {
+  .contacts__block {
+    padding: 0 0 18px 0;
+  }
+
+  .contacts__form-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    min-width: 272px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__block {
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts__form-container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .contacts__form {
+    max-width: 600px;
+  }
 }

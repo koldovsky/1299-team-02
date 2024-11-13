@@ -1,1 +1,31 @@
 <!--Alina Kolomiitseva-->
+<section class="diving-services">
+  <div class="diving-services__logo">
+    <a href="#" aria-label="Diving services homepage">
+      <img src="img/global/diving-mask.svg" alt="Diving mask logo" />
+    </a>
+  </div>
+  <h2 class="diving-services__title">Ready to Go Diving?</h2> 
+  <fieldset class="diving-services__form-wrapper">
+    <legend class="diving-services__form-legend">Complete the form below and book your diving package!</legend>
+    <form action="" method="post" class="diving-services__form">
+      <label for="GET-name" class="diving-services__label"></label>
+      <input id="GET-name" type="text" placeholder="Name*" name="name" class="diving-services__input" required />
+
+      <label for="GET-phone" class="diving-services__label"></label>
+      <input id="GET-phone" type="tel" placeholder="Phone number*" name="phone" class="diving-services__input" required />
+
+      <label for="GET-email" class="diving-services__label"></label>
+      <input id="GET-email" type="email" placeholder="E-mail*" name="email" class="diving-services__input" required />
+
+      <label for="dive-package" class="diving-services__label"></label>
+      <select id="dive-package" name="package" class="diving-services__select">
+        <option value="3-days-9-dives">3 Days - 9 Dives</option>
+        <option value="night-dives">Night Dives</option>
+        <option value="3-caves-3-dives">3 Caves - 3 Dives</option>
+      </select>
+
+      <button type="submit" class="diving-services__button">Request a quote</button>
+    </form>
+  </fieldset>
+</section>
