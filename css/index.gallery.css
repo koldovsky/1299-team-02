@@ -12,17 +12,16 @@
 }
 
 .gallery__description h2 {
-  font-size: 2.5rem;
   margin: 15px 0 10px 0;
 }
 
-.gallery__description p {
+/* .gallery__description p {
   font-size: 1.25rem;
   line-height: 1.6;
   padding: 20px 0 0;
   font-kerning: auto;
   font-optical-sizing: auto;
-}
+} */
 
 .gallery__list {
   margin: 50px 0;
