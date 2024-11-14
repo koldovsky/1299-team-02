@@ -10,10 +10,27 @@
   align-items: center;
   text-align: center;
   gap: 10px 0 0;
+  margin-bottom: 20px;
 }
 
 .gallery__description h2 {
   margin: 15px 0 10px 0;
+}
+
+.gallery__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150vh;
+  gap: 20px;
+}
+
+.gallery__item {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+
 }
 
 .gallery__image-1 {
@@ -70,22 +87,18 @@
     background-size: cover;
     background-repeat: none;
     transition: flex 0.8s ease;
-    
+
     &:hover {
       flex: 8;
       .gallery__image-1 {
-        background:
-        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-         url("../img/index/gallery/gallery-underwater-divers-exploring-fish-filled-ruins.jpeg");
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+          url("../img/index/gallery/gallery-underwater-divers-exploring-fish-filled-ruins.jpeg");
       }
-    & :not(:hover) {
-      background:
-        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+      & :not(:hover) {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+      }
     }
-    }
-    
   }
-
 }
 
 @media (min-width: 991px) {
