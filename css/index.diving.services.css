@@ -8,25 +8,58 @@
 
 .diving-services__title {
   margin: 15px auto 18px auto;
+  font-size: 40px;
+}
+
+.list__container {
+  display: flex;
 }
 
 .diving-services__list {
-  margin: 50px 0;
-  display: grid;
-  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.diving-services__image{
+   padding: 10px 0px 10px;
   }
 
-  .diving-services__list img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  .diving-services__subtitle {
+    padding: 10px 0 10px;
+    font-size: 22px;
+  }
+
+  .diving-services__description{
+    padding: 10px 0 10px;
   }
 
 
-@media (min-width: 479px) {
-  .diving-services__list {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 30px;
-  }
+  @media (min-width: 479px) {
+    .diving-services__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .diving-services__image{
+      padding: 10px 0px 10px;
+    }
+
+}
+
+.button--secondary {
+  border: 2px solid var(--primary-button-hover-color);
+  font-size: 0.69;
+  margin-top: 30px;
+}
+.button--secondary:hover {
+  background-color: var(--secondary-button-hover-color);
+  border: 2px solid var(--secondary-button-hover-color);
+  font-size: 0.69;
+  margin-top: 30px;
 }
 
