@@ -51,7 +51,6 @@
     background-color: var(--background-blocks-description-color);
     padding-bottom: 100px;
     max-width: 350px;
-    text-align: center;
 }
 
 .diving-packages__content img {
@@ -85,4 +84,7 @@
 .diving-packages__content--description {
     line-height: 1.5;
     color: var(--p-text-color-description);
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
