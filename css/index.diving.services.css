@@ -20,7 +20,6 @@
 .diving-services__list {
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
   
   .diving-services__school,
@@ -30,9 +29,10 @@
   
   .diving-services__image img{
      padding: 10px 0px 10px;
-     width: 100%;
-     max-height: auto;
-     object-fit: cover;
+     max-width: px;
+    min-height: 150px;
+    object-fit: cover;
+  
     }
   
     .diving-services__subtitle {
@@ -42,6 +42,7 @@
   
     .diving-services__description{
       padding: 10px 0 10px;
+      font-size: 16px;
     }  
 
 }
@@ -54,12 +55,18 @@
     }
 
     .diving-services__image{
-      padding: 10px 0px 10px;
-      width: 100%;
+      object-fit: cover;
       object-fit: cover;
     }
 
 }
+
+
+
+
+
+
+
 
 /*.button--secondary {
   border: 2px solid var(--primary-button-hover-color);
