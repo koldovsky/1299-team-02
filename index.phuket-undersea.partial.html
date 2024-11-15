@@ -1,4 +1,5 @@
-<div class="content">
+<!-- винеси частину з 1-10 у інший файл index.phuket-undersea.partial.html -->
+<div class="content"> <!-- where logo? | rename div class content to "phuket-undersea" -->
   <h1 class="content__title">Want to See the Phuket Undersea?</h1>
   <p class="content__description">
     We can arrange any diving trip in the Andaman Sea for you.
@@ -7,12 +8,16 @@
 <div class="content__contact">
   <a href="index.contacts.partial.html" class="content__button">Contact us</a>
 </div>
+
+<!-- винеси частину з 13 у інший файл index.scuba-diving-course.partial.html | div's class which contains img have to be named "block__element" => "scuba-diving-course__img-container" -->
 <div>
   <img class="aqualung-mask__icon" src="img/global/diving-mask.svg" alt="aqualung_image" />
 </div>
+<!-- name classes by BEM's rules-->
 <div class="driver_underthesea_icon">
+  <!-- delete "width="545", only in CSS -->
   <img
-    width="545"
+    width="545" 
     src="img/index/scuba-course/scuba-course-diver-show-okay.png"
     alt="driver_underthesea_image"
   />
