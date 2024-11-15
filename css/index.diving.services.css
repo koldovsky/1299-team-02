@@ -21,7 +21,6 @@
   justify-content: center;
   text-align: center;
 
-
   .diving-services__school,
   .diving-services__tours {
     padding: 20px 10px 20px;
@@ -29,7 +28,6 @@
   }
 
   .diving-services__image img {
-    display: block;
     min-width: 270px;
     max-height: 150px;
     object-fit: cover;
@@ -44,8 +42,8 @@
     padding: 10px 0 10px;
     font-size: 16px;
   }
-
 }
+
 
 @media (min-width: 479px) {
   .diving-services__list {
@@ -57,24 +55,4 @@
   .diving-services__image {
     object-fit: cover;
   }
-
-}
-
-
-
-
-
-
-
-
-/*.button--secondary {
-  border: 2px solid var(--primary-button-hover-color);
-  font-size: 0.69;
-  margin-top: 30px;
-}
-.button--secondary:hover {
-  background-color: var(--secondary-button-hover-color);
-  border: 2px solid var(--secondary-button-hover-color);
-  font-size: 0.69;
-  margin-top: 30px;
 }

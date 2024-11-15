@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diving School</title>
     <link
-        rel="shortcut icon"
-        href="img/global/icon.svg"
-        type="image/image/svg+xml"
+      rel="shortcut icon"
+      href="img/global/icon.svg"
+      type="image/image/svg+xml"
     />
     <link rel="stylesheet" href="css/index.css" />
     <script
-        src="https://unpkg.com/htmx.org@1.9.10"
-        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-        crossorigin="anonymous"
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.contact-bar.partial.html"
+      ></div>
+      <section class="diving-school-header__header">
+        <div class="container">
+          <div
             data-hx-trigger="load"
             data-hx-swap="outerHTML"
-            data-hx-get="global.contact-bar.partial.html"
-        ></div>
-        <section
+            data-hx-get="global.navbar.partial.html"
+          ></div>
+          <div
             data-hx-trigger="load"
             data-hx-swap="outerHTML"
-            data-hx-get="diving-school.header.partial.html"
-        ></section>  
+            data-hx-get="diving-school.header-hero.partial.html"
+          ></div>
+        </div>
+      </section>
     </header>
     <main>
-        <!-- Anton Kostin, Certificates -->
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="diving-school.certificates.partial.html"
-        ></section>
-        <!-- Anton Kostin, PADI Open Water Course -->
-        <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="diving-school.padi-owc.partial.html"
-        ></section>
-        <!-- Artur Oleksiuk -->
-        <section
-        
-        ></section>
-        <!-- Artur Oleksiuk -->
-        <section
-        
-        ></section>
-        <!-- Artur Oleksiuk -->
-        <section
-        
-        ></section>
+      <!-- Anton Kostin, Certificates -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="diving-school.certificates.partial.html"
+      ></section>
+      <!-- Anton Kostin, PADI Open Water Course -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="diving-school.padi-owc.partial.html"
+      ></section>
+      <!-- Artur Oleksiuk, PADI Advanced Open Water Diver (AOWD) -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="diving-school.padi-aowd.partial.html"
+      ></section>
+      <!-- Artur Oleksiuk, PADI Divemaster Course -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="diving-school.padi-dc.partial.html"
+      ></section>
+      <!-- Artur Oleksiuk, Form -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="diving-school.form.partial.html"
+      ></section>
     </main>
     <footer>
-        <section
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.footer.partial.html"
       ></section>
     </footer>
-</body>
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>

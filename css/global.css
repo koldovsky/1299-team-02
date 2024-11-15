@@ -101,6 +101,10 @@ header a {
   padding: 0px 24px;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 @media (min-width: 479px) {
   h2 {
     font-size: var(--h2-font-size-479);
