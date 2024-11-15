@@ -12,8 +12,17 @@ function makeNegative(num) {
     return -num;
   }
 }
-//Game Move
+// Game Move
 // https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 function move (position, roll) {
   return position + roll * 2;
+}
+// Personalized Message
+// https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
+function greet(name, owner) {
+  if (name === owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
 }
