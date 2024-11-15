@@ -17,17 +17,21 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <header>
+  <header class="header">
     <div
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="global.contact-bar.partial.html"
     ></div>
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="global.navbar.partial.html"
-    ></div>
+    <section class="header__header">
+      <div class="container">
+        <div
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="global.navbar.partial.html"
+        ></div>
+      </div>
+    </section>
   </header>
   <body>
     <main>
@@ -50,4 +54,5 @@
       data-hx-get="global.footer.partial.html"
     ></div>
   </footer>
+  <script type="module" src="./js/index.js"></script>
 </html>
