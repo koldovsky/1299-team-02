@@ -26,19 +26,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 
   font-weight: 700;
 }
 
+.nav-contacts {
+  margin-top: 10px;
+}
+
+.header__menu-item .header__social-links {
+  padding: 0;
+  margin: 10px 0;
+}
+
 .header__menu-link {
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s;
   display: inline-block;
 }
 
 .header__menu-link:hover {
   color: var(--link--hover-color);
+}
+
+.header__menu-link.header__contact-phone {
+  font-weight: 400;
 }
 
 .header__nav-menu {
@@ -156,5 +169,13 @@
     flex-direction: row;
     align-items: center;
     gap: 15px;
+  }
+
+  .header__menu-link {
+    font-size: 14px;
+  }
+
+  .nav-contacts {
+    display: none;
   }
 }
