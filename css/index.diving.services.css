@@ -13,51 +13,50 @@
 
 .list__container {
   display: flex;
-  gap: 20px 20px
-;
+  gap: 20px 20px;
 }
 
 .diving-services__list {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
+
+
   .diving-services__school,
   .diving-services__tours {
     padding: 20px 10px 20px;
+
   }
-  
-  .diving-services__image img{
-     padding: 10px 0px 10px;
-     max-width: px;
-    min-height: 150px;
+
+  .diving-services__image img {
+    display: block;
+    min-width: 270px;
+    max-height: 150px;
     object-fit: cover;
-  
-    }
-  
-    .diving-services__subtitle {
-      padding: 10px 0 10px;
-      font-size: 22px;
-    }
-  
-    .diving-services__description{
-      padding: 10px 0 10px;
-      font-size: 16px;
-    }  
+  }
+
+  .diving-services__subtitle {
+    padding: 10px 0 10px;
+    font-size: 22px;
+  }
+
+  .diving-services__description {
+    padding: 10px 0 10px;
+    font-size: 16px;
+  }
 
 }
 
-  @media (min-width: 479px) {
-    .diving-services__list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px 20px;
-    }
+@media (min-width: 479px) {
+  .diving-services__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+  }
 
-    .diving-services__image{
-      object-fit: cover;
-      object-fit: cover;
-    }
+  .diving-services__image {
+    object-fit: cover;
+  }
 
 }
 
@@ -79,4 +78,3 @@
   font-size: 0.69;
   margin-top: 30px;
 }
-
