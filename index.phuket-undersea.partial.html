@@ -1,4 +1,5 @@
-<div class="content">
+<!-- винеси частину з 1-10 у інший файл index.phuket-undersea.partial.html -->
+<div class="content"> <!-- where logo? | rename div class content to "phuket-undersea" -->
   <h1 class="content__title">Want to See the Phuket Undersea?</h1>
   <p class="content__description">
     We can arrange any diving trip in the Andaman Sea for you.
@@ -7,12 +8,16 @@
 <div class="content__contact">
   <a href="index.contacts.partial.html" class="content__button">Contact us</a>
 </div>
+
+<!-- винеси частину з 13 у інший файл index.scuba-diving-course.partial.html | div's class which contains img have to be named "block__element" => "scuba-diving-course__img-container" -->
 <div>
   <img class="aqualung-mask__icon" src="img/global/diving-mask.svg" alt="aqualung_image" />
 </div>
+<!-- name classes by BEM's rules-->
 <div class="driver_underthesea_icon">
+  <!-- delete "width="545", only in CSS -->
   <img
-    width="545"
+    width="545" 
     src="img/index/scuba-course/scuba-course-diver-show-okay.png"
     alt="driver_underthesea_image"
   />
@@ -23,7 +28,8 @@
     If you have already tried scuba diving, and you liked it, and you want to
     know more, be more independent under the water and dive in the places for
     certified divers, then the Open Water Diver diving course in Phuket is where
-    you need to start. The course is divided into several parts: theory,
+    you need to start. 
+    <br> course is divided into several parts: theory,
     practice, and of course, diving itself. It's simple: you go through all
     these parts of training in parallel: theory and practice in the pool or
     shallow water, and then real dives in the sea. During the training, you will
@@ -31,10 +37,39 @@
     to use it and take care of it; where and when you can dive and how to plan
     your dives, how to swim under the water. You will learn so much that every
     day will bring you more and more vivid impressions!
+  </br>
   </p>
   <a href="#" class="content__button">Learn more</a>
 </div>
 <div>
   <img class="aqualung-mask__icon" src="img/global/diving-mask.svg" alt="aqualung_image" />
 </div>
-
+<div class="content__marks">
+  <h3 class="content__awards">Awards</h3>
+</div>
+<div class="content__images">
+  <img
+    class="content__image"
+    width="220"
+    src="img/marks/5d7b862182933d00237c605e_optimized_542_e760x761-109x109.webp"
+    alt="francis"
+  />
+  <img
+    class="content__image"
+    width="220"
+    src="img/marks/5d7b8624f901b2002377329f_optimized_657_e931x768-137x113.webp"
+    alt="cliffview"
+  />
+  <img
+    class="content__image"
+    width="220"
+    src="img/marks/5d7b8628a29ff100244a00b6_optimized_630_e900x805-135x120.webp"
+    alt="stanford"
+  />
+  <img
+    class="content__image"
+    width="220"
+    src="img/marks/5d7b862af901b200237732e7_optimized_563_e810x810-123x123.webp"
+    alt="jefferson"
+  />
+</div>

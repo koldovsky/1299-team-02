@@ -3,31 +3,58 @@
 }
 
 .gallery__info {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 10px 0 0;
+  margin-bottom: 20px;
 }
 
 .gallery__description h2 {
   margin: 15px 0 10px 0;
 }
 
-/* .gallery__description p {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  padding: 20px 0 0;
-  font-kerning: auto;
-  font-optical-sizing: auto;
-} */
-
 .gallery__list {
-  margin: 50px 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150vh;
   gap: 20px;
-  object-fit: cover;
+}
+
+.gallery__item {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+
+}
+
+.gallery__image-1 {
+  background-image: url("../img/index/gallery/gallery-underwater-divers-exploring-fish-filled-ruins.jpeg");
+}
+
+.gallery__image-2 {
+  background-image: url("../img/index/gallery/gallery-colorful-coral-reef-underwater-scene.jpeg");
+}
+
+.gallery__image-3 {
+  background-image: url("../img/index/gallery/gallery-clownfish-swimming-in-sea-anemone-habitat.jpeg");
+}
+
+.gallery__image-4 {
+  background-image: url("../img/index/gallery/gallery-scuba-diver-exploring-coral-reef-with-tropical-fish.jpeg");
+}
+
+.gallery__image-5 {
+  background-image: url("../img/index/gallery/gallery-diverse-coral-reef-ecosystem-underwater.jpeg");
+}
+
+.gallery__image-6 {
+  background-image: url("../img/index/gallery/gallery-anemonefish-swimming-among-sea-anemones.jpeg");
 }
 
 @media (min-width: 479px) {
@@ -44,28 +71,40 @@
   }
 }
 
+@media (min-width: 768px) {
+  .gallery__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+    gap: 0;
+  }
+
+  .gallery__item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+
+    &:hover {
+      flex: 8;
+      .gallery__image-1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+          url("../img/index/gallery/gallery-underwater-divers-exploring-fish-filled-ruins.jpeg");
+      }
+      & :not(:hover) {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+      }
+    }
+  }
+}
+
 @media (min-width: 991px) {
   .gallery__info {
     margin: 90px 0 20px;
     gap: 10px 0 0;
-  }
-
-  .gallery__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 35px;
-    margin: 0;
-  }
-
-  .gallery__image img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  h2 {
-    font-size: 3.12rem;
-    margin: 15px 0 10px;
   }
 
   .gallery__description p {

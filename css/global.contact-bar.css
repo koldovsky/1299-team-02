@@ -1,5 +1,23 @@
 .header__contact-bar {
   display: none;
+
+  background-color: var(--bg-color);
+}
+
+.header__social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 6px 0;
+}
+
+.header__social-link {
+  width: 30px;
+}
+
+.header__social-link:hover {
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 992px) {
@@ -7,23 +25,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-color: var(--bg-color);
-  }
-
-  .header__social-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    padding: 6px 0;
-  }
-
-  .header__social-link {
-    width: 30px;
-  }
-
-  .header__social-link:hover {
-    opacity: 0.7;
   }
 }
