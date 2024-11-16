@@ -19,7 +19,7 @@
 }
 
 .contacts__logo {
-  width: 48px;
+  width: 68px;
 }
 
 .contacts__title {
@@ -79,7 +79,7 @@
   color: var(--text-color);
   outline-color: var(--form-fields-border-color);
   font-size: 16px;
-  max-width: 162px;
+  min-width: px;
   max-height: 44px;
   font-size: 12px;
   font-family: "Chivo", sans-serif;
@@ -126,9 +126,8 @@
 @media (min-width: 768px) {
   .contacts__block {
     max-width: 1170px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .contacts__form {
@@ -143,23 +142,24 @@
     width: 100px;
   }
 
-  /* .contacts__description {
+  .contacts__description {
     max-width: 558px;
-  } */
+  }
 
   .contacts__details-info {
     margin-left: 50px;
-    max-width: 300px;
-  }
-
-  .contacts__form-container {
-    margin-left: auto;
-    margin-right: 0;
-    height: 418px;
     
   }
+  .contacts__form-container {
+    margin-left: 50px;
+    margin-right: 0;
+    height: 418px;
+  }
 
+  .contacts__input {
+    width: 120%;
+  }
   .contacts__button {
-    width: 100%;
+    width: 120%;
   }
 }
