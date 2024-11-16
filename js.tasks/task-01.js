@@ -19,4 +19,9 @@ function makeNegative(num) {
 function move (position, roll) {
   return position + roll * 2;
 }
+//https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
+function greet (name, owner) {
+let result = (name === owner) ? 'Hello boss': "Hello guest";
+return result;
+}
 
