@@ -31,3 +31,10 @@ function lovefunc(flower1, flower2) {
     let summaryGoals = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
     return summaryGoals;
 }
+
+// https://www.codewars.com/kata/563a631f7cbbc236cf0000c2
+// Grasshopper - Terminal game move function
+function move (position, roll) {
+    const step = roll * 2;
+    return position + step;
+ }
