@@ -20,6 +20,12 @@ function move (position, roll) {
     return position + roll * 2;
 }
 
+// 5
+
+function litres(time) {
+    return Math.floor(time/2);
+}
+
 // 6
 // Opposites Attract
 function lovefunc(flower1, flower2){
