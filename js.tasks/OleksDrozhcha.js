@@ -67,4 +67,11 @@ var max = function (list) {
   return list[0];
 };
 
-
+// Smallest value of an array
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+function min(arr, toReturn) { 
+  switch(toReturn) {
+    case "value": return Math.min(...arr);
+    case "index": return arr.indexOf(Math.min(...arr));
+  }
+}
