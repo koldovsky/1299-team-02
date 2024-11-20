@@ -9,11 +9,11 @@ function DNAtoRNA(dna) {
   
   for (let i = 0; i < arrDna.length; i++) {
     if (arrDna[i] === "T") {
-      arrDna[i] = "U"; // Correctly update the array element
+      arrDna[i] = "U"; 
     }
   }
 
-  return arrDna.join(""); // Convert the array back to a string
+  return arrDna.join(""); 
 }
 
 
