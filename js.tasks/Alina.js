@@ -1,3 +1,42 @@
+//Results for tasks-2
+//https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+function stringToArray(string){
+  return string.split(" ");
+}
+//https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+function DNAtoRNA(dna) {
+  let arrDna = dna.split("");
+  
+  for (let i = 0; i < arrDna.length; i++) {
+    if (arrDna[i] === "T") {
+      arrDna[i] = "U"; // Correctly update the array element
+    }
+  }
+
+  return arrDna.join(""); // Convert the array back to a string
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Results for tasks-1
+
 // https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   const sumGoals = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
