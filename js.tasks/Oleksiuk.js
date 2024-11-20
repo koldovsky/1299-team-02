@@ -18,13 +18,7 @@ var max = function (list) {
 };
 // Smallest value of an array
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
-function min(arr, toReturn) {
-    switch (toReturn) {
-      case 'value':
-        return Math.min(...arr);
-      case 'index':
-        return arr.indexOf(Math.min(...arr));
-      default:
-        return 0;
-    }
-  }
+function min(arr, toReturn) { 
+  const minValue = Math.min(...arr);
+  return toReturn === "value" ? minValue : arr.indexOf(minValue);
+}
