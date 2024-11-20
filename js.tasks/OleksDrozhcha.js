@@ -100,3 +100,14 @@ function getRealFloor(n) {
   if (n < 13) return n - 1;
   return n - 2;
 }
+
+// Beginner Series #2 Clock
+// https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+function past(h, m, s){
+  return s * 1000 + m * 60_000 + h * 3600000
+}
+// Is n divisible by x and y?
+// https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
