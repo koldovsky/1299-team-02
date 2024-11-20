@@ -6,13 +6,11 @@ function stringToArray(string){
 //https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 function DNAtoRNA(dna) {
   let arrDna = dna.split("");
-  
   for (let i = 0; i < arrDna.length; i++) {
     if (arrDna[i] === "T") {
       arrDna[i] = "U"; 
     }
   }
-
   return arrDna.join(""); 
 }
 
@@ -25,26 +23,15 @@ var min = function(list){
    return list.reduce((a, b) => a > b ? a : b);
  }
 
- //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ //https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+ function min(arr, toReturn) { 
+  const minItem = Math.min(...arr);
+if (toReturn === "value") {
+  return minItem;
+} else {
+return arr.indexOf(minItem);
+}
+}  
 
 //Results for tasks-1
 
