@@ -117,3 +117,35 @@ function isDivisible(n, x, y) {
 //Geometry Basics: Circle Circumference in 2D
 // https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 const circleCircumference = circle => 2 * Math.PI * circle.radius;
+
+// Training JS #12: loop statement --for..in and for..of
+// https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
+function giveMeFive(obj){
+  const resultArray = [];
+  for (let objKey in obj){
+    if ( objKey.length === 5){
+      resultArray.push(objKey);
+    }
+    if (obj[objKey].length === 5) {
+      resultArray.push(obj[objKey])
+    }
+  }
+  return resultArray;
+}
+
+// альтернативне рішення:
+const giveMeFive1 =(obj) => Object.entries(obj).flatMap(([key, value]) => [key.length === 5 ? key : null, value.length === 5 ? value : null]).filter(Boolean);
+
+// Understanding closures - the basics
+// https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
+const buildFun = (n) => {
+  const result = [];
+  for (let i = 0; i < n; i++) {
+    result.push(function () {
+      return i;
+    });
+  }
+  return result;
+};
+
+
