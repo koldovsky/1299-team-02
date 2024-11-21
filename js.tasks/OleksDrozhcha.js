@@ -41,7 +41,7 @@ function lovefunc(flower1, flower2) {
   }
 }
 
------------------------------------------------------------------------------------------
+// task-02 -----------------------------------------------------------------------------------------
 
 // Convert a string to an array
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
@@ -111,3 +111,9 @@ function past(h, m, s){
 function isDivisible(n, x, y) {
   return n % x === 0 && n % y === 0;
 }
+
+// task-03 -----------------------------------------------------------------------------------------
+
+//Geometry Basics: Circle Circumference in 2D
+// https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+const circleCircumference = circle => 2 * Math.PI * circle.radius;
