@@ -1,0 +1,40 @@
+.why-choose-us {
+  text-align: center;
+  padding: 40px 20px;
+}
+.why-choose-us__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .why-choose-us__icon {
+    width: 40px;
+    height: auto;
+  }
+  .why-choose-us__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .why-choose-us__option {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  .why-choose-us__option-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: #274c77; 
+    border-radius: 50%;
+    z-index: -1;
+  }

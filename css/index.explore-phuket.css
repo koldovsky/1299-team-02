@@ -1,0 +1,43 @@
+.explore-phuket {
+    border-image:         
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/diving-packages/diving-packages-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10%;
+}
+
+.explore-phunket__h2-container {
+    width: 50%;
+    max-width: 1000px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore-phunket__h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.explore-phuket__icons img {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore-phuket__content-image-container {
+    width: 400px;
+    aspect-ratio: 4/3;
+}
+
+.explore-phuket__content-image-container img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.explore-phuket__content {
+    display: flex;
+    align-content: center;
+}

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px 0;
+  gap: 20px 0;
   margin: 40px 0 0;
 }
 
@@ -10,27 +10,22 @@
   display: grid;
   align-items: center;
   gap: 30px 0;
-  margin: 30px 0;
+  margin: 20px 0 50px;
 }
 
-.nine-dives__descroption-list {
+.nine-dives__description-list {
   width: 100%;
   align-content: left;
 }
 
-.descroption__list-item {
+.description__list-item {
     display: flex;
     gap: 10px;
 }
 
-.descroption_checkbox {
+.description_checkbox {
     width: 20px;
     height: 20px;
-}
-
-.descroption_checkbox img {
-    width: 100%;
-    height: 100%;
 }
 
 .nine-dives__footer-item {

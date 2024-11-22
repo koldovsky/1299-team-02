@@ -1,0 +1,29 @@
+.destinations {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 24px;
+
+  .destinations__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .destinations__title {
+      margin: 15px auto 18px;
+    }
+  }
+
+  .destinations__list {
+    display: grid;
+    gap: 30px;
+
+    .destinations__card {
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      .destinations__card-content {
+        padding: 0 30px;
+      }
+    }
+  }
+}
