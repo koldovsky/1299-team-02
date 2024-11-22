@@ -2,54 +2,65 @@
 //https://www.codewars.com/kata/58e43389acfd3e81d5000a88/train/javascript
 function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
-  }
+}
 //https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
-function giveMeFive(obj){
+function giveMeFive(obj) {
   const newArr = [];
-  for(let key in obj) {
-  if (key.length === 5) {
-  newArr.push(key);
+  for (let key in obj) {
+    if (key.length === 5) {
+      newArr.push(key);
+    }
+    if (obj[key].length === 5) newArr.push(obj[key]);
   }
-  if (obj[key].length === 5)
-  newArr.push(obj[key]);
+  return newArr;
+}
+
+//https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
+
+class Animal {
+  constructor(name, age, legs, species, status) {
+    this.name = name;
+    this.age = age;
+    this.legs = legs;
+    this.species = species;
+    this.status = status;
   }
-    return newArr;
+  introduce() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+  }
+}
+class Shark extends Animal {
+  constructor(name, age, status) {
+    // Call the parent constructor with hardcoded values for legs and species
+    super(name, age, 0, "shark", status);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status) {
+    // Call the parent constructor
+    super(name, age, 4, "cat", status); // Legs and species are hardcoded
   }
 
-  class Shark extends Animal {
-    constructor(name, age, status) {
-      // Call the parent constructor with hardcoded values for legs and species
-      super(name, age, 0, "shark", status);
-    }
-  
+  // Override the introduce method
+  introduce() {
+    return `${super.introduce()}  Meow meow!`;
   }
-  class Cat extends Animal {
-    constructor(name, age, status) {
-      // Call the parent constructor
-      super(name, age, 4, "cat", status); // Legs and species are hardcoded
-    }
-  
-    // Override the introduce method
-    introduce() {
-      return `${super.introduce()}  Meow meow!`;
-    }
-  }
-  
-  // Dog class inheriting Animal
-  class Dog extends Animal {
-    constructor(name, age, status, master) {
-      // Call the parent constructor
-      super(name, age, 4, "dog", status); // Legs and species are hardcoded
-      this.master = master; // Assign master
-    }
-  
-    // Override the introduce method
-    greetMaster() {
-      return `Hello ${this.master}`;
-    }
+}
+
+// Dog class inheriting Animal
+class Dog extends Animal {
+  constructor(name, age, status, master) {
+    // Call the parent constructor
+    super(name, age, 4, "dog", status); // Legs and species are hardcoded
+    this.master = master; // Assign master
   }
 
-//
+  // Override the introduce method
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
+}
 //Results for tasks-2
 //https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 function stringToArray(string) {
