@@ -1,38 +1,26 @@
 .explore-phuket {
+  margin: 100px 0;
   width: 100%;
-  height: 100%;
-
-  p {
-    padding-bottom: 10px;
-  }
 }
-
 .explore__header {
   display: flex;
   flex-direction: column;
-  margin: 80px 0 0;
-
-  .explore__icon {
-    margin: 0;
-  }
-
-  .explore__description h2,
-  .explore__description p {
-    margin: 30px 0;
-  }
+  justify-content: left;
+  width: 50%;
+  gap: 20px 0;
+  margin: 20px 0;
 }
-
 .explore-container {
-  padding: 10px 0 60px;
-  margin: 0 auto;
+  height: 60vh;
   width: 100%;
 }
 
 .explore__gallery-wrap {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 50vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .diving-photo__item {
@@ -40,65 +28,19 @@
   height: 100%;
   background-position: center;
   background-size: cover;
-  background-repeat: none;
-  transition: flex 0.6s ease;
-
-  &:hover {
-    flex: 2;
-  }
+  background-repeat: no-repeat;
+  translate: flex 0.5 ease;
 }
 
 .image-1 {
   background-image: url(../img/packages/coral-reef.jpeg);
 }
-
 .image-2 {
-  background-image: url(../img/packages/school-of-fish.jpeg);
-}
-.image-3 {
   background-image: url(../img/packages/packages.night.dives.jpg);
 }
-
+.image-3 {
+  background-image: url(../img/packages/school-of-fish.jpeg);
+}
 .image-4 {
   background-image: url(../img/packages/diving__wreck-exploration.jpeg);
-}
-
-
-@media (min-width: 479px) {
-  .explore__gallery-wrap {
-    height: 60vh;
-  }
-}
-
-@media (min-width: 625px) {
-  .explore__gallery-wrap {
-    height: 70vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .explore__description {
-    width: 50%;
-    align-content: left;
-  }
-
-  .explore__gallery-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 65vh;
-  }
-
-  .diving-photo__item {
-    flex: 1;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    transition: flex 0.9s ease;
-
-    &:hover {
-      flex: 2;
-    }
-  }
 }
