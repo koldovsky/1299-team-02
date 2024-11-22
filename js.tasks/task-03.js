@@ -8,7 +8,18 @@ function circleCircumference(circle) {
 //2
 //https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 //Training JS #12: loop statement --for..in and for..of
-
+function giveMeFive(obj){
+  let resultArr = [];
+  for(const value in obj){
+    if(value.length === 5){
+      resultArr.push(value);
+    }
+    if(obj[value].length === 5){
+      resultArr.push(obj[value]);
+    }
+  }
+  return resultArr;
+}
 
 //3
 //https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
