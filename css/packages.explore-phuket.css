@@ -55,6 +55,14 @@
 .image-2 {
   background-image: url(../img/packages/school-of-fish.jpeg);
 }
+.image-3 {
+  background-image: url(../img/packages/packages.night.dives.jpg);
+}
+
+.image-4 {
+  background-image: url(../img/packages/diving__wreck-exploration.jpeg);
+}
+
 
 @media (min-width: 479px) {
   .explore__gallery-wrap {
