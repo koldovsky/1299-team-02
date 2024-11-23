@@ -45,6 +45,7 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px 10px;
+    object-fit: cover;
 }
 
 .diving-packages__content article {
@@ -90,7 +91,7 @@
 }
 
 .diving-packages__content--more {
-    text-align: center;
-    padding-top: 10%;
-
-}
+    font-size: 0.69rem;
+    margin: 35%;
+    font-weight: bold;
+  }
