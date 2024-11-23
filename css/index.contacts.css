@@ -79,7 +79,6 @@
   color: var(--text-color);
   outline-color: var(--form-fields-border-color);
   font-size: 16px;
-  min-width: px;
   max-height: 44px;
   font-size: 12px;
   font-family: "Chivo", sans-serif;
