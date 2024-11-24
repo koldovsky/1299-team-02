@@ -1,5 +1,6 @@
 function init() {
   import("./header.js");
+  import("./index.diving-package.js")
 }
 
 const totalPartials = document.querySelectorAll(
