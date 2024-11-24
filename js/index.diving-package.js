@@ -23,8 +23,8 @@ const packages = [
 
 function renderDivingPackages(packages){
     packagesHtml = "";
-    for (let package of packages){
-        packageHtml = `
+    for (const package of packages){
+        packageHtml += `
          <article>
       <img src="${package.image}" alt="3 Days - 9 Dives service" />
       <p class="diving-packages__content--service">${package.service}</p>
@@ -42,6 +42,6 @@ function renderDivingPackages(packages){
     
     }
 
-    renderDivingPackages(packages)
+    renderDivingPackages(packages);
 
 }
