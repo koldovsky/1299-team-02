@@ -1,5 +1,5 @@
 .explore-phuket {
-  margin: 100px 0;
+  margin: 100px auto 0;
   width: 100%;
 }
 .explore__header {
@@ -9,38 +9,4 @@
   width: 50%;
   gap: 20px 0;
   margin: 20px 0;
-}
-.explore-container {
-  height: 60vh;
-  width: 100%;
-}
-
-.explore__gallery-wrap {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.diving-photo__item {
-  flex: 1;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  translate: flex 0.5 ease;
-}
-
-.image-1 {
-  background-image: url(../img/packages/coral-reef.jpeg);
-}
-.image-2 {
-  background-image: url(../img/packages/packages.night.dives.jpg);
-}
-.image-3 {
-  background-image: url(../img/packages/school-of-fish.jpeg);
-}
-.image-4 {
-  background-image: url(../img/packages/diving__wreck-exploration.jpeg);
 }

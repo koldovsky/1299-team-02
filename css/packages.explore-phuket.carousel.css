@@ -1,0 +1,36 @@
+.explore-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.explore__gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  width: 300%;
+  justify-content: center;
+  align-items: center;
+}
+
+.diving-photo__item {
+  flex: 1;
+  height: 100%;
+}
+
+.diving-photo__item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .image-1 {
+  background-image: url(../img/packages/coral-reef.jpeg);
+}
+.image-2 {
+  background-image: url(../img/packages/packages.night.dives.jpg);
+}
+.image-3 {
+  background-image: url(../img/packages/school-of-fish.jpeg);
+}
+.image-4 {
+  background-image: url(../img/packages/diving__wreck-exploration.jpeg);
+} */
