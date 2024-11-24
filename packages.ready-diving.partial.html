@@ -1,31 +1,65 @@
 <!--Alina Kolomiitseva-->
-<section class="ready-diving container">
-  <div class="ready-diving__logo aqualung-mask__icon">
-    <a href="#" aria-label="Diving services homepage">
-      <img src="img/global/diving-mask.svg" alt="Diving mask logo" />
-    </a>
+<section class="ready-diving">
+  <div class="ready-diving__form-wrapper">
+    <div class="ready-diving__header">
+      <div class="ready-diving__logo aqualung-mask__icon">
+        <a href="#" aria-label="Diving services homepage">
+          <img src="img/global/diving-mask.svg" alt="Diving mask logo" />
+        </a>
+      </div>
+      <div class="ready-diving__title">
+        <h2>Ready to Go Diving?</h2>
+      </div>
+    </div>
+    <div class="ready-diving__form">
+      <fieldset class="ready-diving__form-wrapper">
+        <legend class="ready-diving__form-legend">
+          Complete the form below and book your diving package!
+        </legend>
+        <form action="" method="post" class="ready-diving__form">
+          <label for="GET-name" class="ready-diving__label"></label>
+          <input
+            id="GET-name"
+            type="text"
+            placeholder="Name*"
+            name="name"
+            class="ready-diving__input"
+            required
+          />
+  
+          <label for="GET-phone" class="ready-diving__label"></label>
+          <input
+            id="GET-phone"
+            type="tel"
+            placeholder="Phone number*"
+            name="phone"
+            class="ready-diving__input"
+            required
+          />
+  
+          <label for="GET-email" class="ready-diving__label"></label>
+          <input
+            id="GET-email"
+            type="email"
+            placeholder="E-mail*"
+            name="email"
+            class="ready-diving__input"
+            required
+          />
+  
+          <label for="dive-package" class="ready-diving__label"></label>
+          <select id="dive-package" name="package" class="ready-diving__select">
+            <option value="3-days-9-dives">3 Days - 9 Dives</option>
+            <option value="night-dives">Night Dives</option>
+            <option value="3-caves-3-dives">3 Caves - 3 Dives</option>
+          </select>
+  <div class="ready-diving__form-button"> <button type="submit" class="button button--primary ">
+    Request a quote
+  </button></div>
+         
+        </form>
+      </fieldset>
+    </div>
   </div>
-  <h2 class="ready-diving__title">Ready to Go Diving?</h2> 
-  <fieldset class="ready-diving__form-wrapper">
-    <legend class="ready-diving__form-legend">Complete the form below and book your diving package!</legend>
-    <form action="" method="post" class="ready-diving__form">
-      <label for="GET-name" class="ready-diving__label"></label>
-      <input id="GET-name" type="text" placeholder="Name*" name="name" class="ready-diving__input" required />
-
-      <label for="GET-phone" class="ready-diving__label"></label>
-      <input id="GET-phone" type="tel" placeholder="Phone number*" name="phone" class="ready-diving__input" required />
-
-      <label for="GET-email" class="ready-diving__label"></label>
-      <input id="GET-email" type="email" placeholder="E-mail*" name="email" class="ready-diving__input" required />
-
-      <label for="dive-package" class="ready-diving__label"></label>
-      <select id="dive-package" name="package" class="ready-diving__select">
-        <option value="3-days-9-dives">3 Days - 9 Dives</option>
-        <option value="night-dives">Night Dives</option>
-        <option value="3-caves-3-dives">3 Caves - 3 Dives</option>
-      </select>
-
-      <button type="submit" class="ready-diving__button">Request a quote</button>
-    </form>
-  </fieldset>
+  
 </section>
