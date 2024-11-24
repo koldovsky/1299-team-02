@@ -22,26 +22,18 @@ const packages = [
 
 
 function renderDivingPackages(packages){
-    packagesHtml = "";
-    for (const package of packages){
-        packageHtml += `
+   let packagesHtml = "";
+    for (const service of packages){
+        packagesHtml += `
          <article>
-      <img src="${package.image}" alt="3 Days - 9 Dives service" />
-      <p class="diving-packages__content--service">${package.service}</p>
-      <p class="diving-packages__content--price">from $ ${package.price}</p>
-      <p class="diving-packages__content--description">
-        ${package.description}
-
-      </p>
-
+      <img src="${service.image}" alt="3 Days - 9 Dives service" />
+      <p class="diving-packages__content--service">${service.service}</p>
+      <p class="diving-packages__content--price">from $ ${service.price}</p>
+      <p class="diving-packages__content--description">${service.description}</p>
       <a class="diving-packages__content--more" href="#">LEARN MORE</a>
-
-
-    </article>`;
-    document.querySelector('.diving-packages__content').innerHTML = packageHtml;
-    
-    }
-
-    renderDivingPackages(packages);
-
+    </article>`; 
+    }  
+    document.querySelector('.diving-packages__content').innerHTML = packagesHtml;
 }
+
+renderDivingPackages(packages);
