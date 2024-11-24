@@ -12,16 +12,27 @@
   font-size: 40px;
 }
 
-.night-dives__content {
+.description__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: left;
   margin: 25px auto;
+  text-align: start;
+}
+
+.night-dives__detail-item {
+  display: flex;
+  text-align: left;
+  gap: 10px;
+}
+
+.description_checkbox {
+  width: 20px;
+  height: 20px;
 }
 
 .night-dives__description-right {
-  margin: 25px auto;
+  margin-top: 50px;
 }
 
 .description_checkbox {
@@ -40,10 +51,33 @@
 }
 
 @media (min-width: 479px) {
-  
-    .image__container > img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  .image__container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+}
+
+@media (min-width: 768px) {
+  .night-dives__description {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: 30px;
+   }
+
+  .night-dives__description-left {
+    width: 70%;
+  }
+
+  .night-dives__description-right {
+    width: 30%;
+  margin-top: 0px;
+  }
+
+   .image__container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
