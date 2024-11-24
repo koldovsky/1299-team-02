@@ -1,0 +1,58 @@
+.three-caves__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px 20px;
+  margin: 100px auto 30px;
+}
+
+.three-caves__title {
+  margin: 15px auto 18px auto;
+  font-size: 40px;
+}
+
+.three-caves__content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 25px auto;
+  text-align: start;
+}
+
+.three-caves__detail-item {
+  display: flex;
+  text-align: left;
+  gap: 10px;
+}
+
+.description_checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.night-dives__description-right {
+  margin-top: 50px;
+}
+
+.description_checkbox {
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .three-caves__content {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: 30px;
+  }
+
+  .three-caves__description-left {
+    width: 70%;
+  }
+
+  .three-caves__description-right {
+    width: 30%;
+    margin-top: 0px;
+  }
+}
