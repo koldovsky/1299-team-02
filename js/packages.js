@@ -1,5 +1,5 @@
 function init() {
-    import("./packages.explore-phuket");
+    import("./packages.explore-phuket.carousel.js");
   }
   
   const totalPartials = document.querySelectorAll(
