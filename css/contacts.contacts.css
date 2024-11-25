@@ -118,6 +118,10 @@
 }
 
 @media (min-width: 768px) {
+  .contacts__page-contacts{
+    padding-top: 50px;
+    padding-bottom: 100px ;
+  }
   .contacts__block-contacts {
     max-width: 1170px;
     display: grid;
@@ -136,22 +140,17 @@
     width: 100px;
   }
 
-  .contacts__description-contacts {
-    max-width: 558px;
-  }
+  
 
   .contacts__details-info-contacts {
     margin-left: 50px;
   }
   .contacts__form-container-contacts {
     margin-left: 50px;
-    margin-right: 0;
     height: 418px;
   }
 
-  .contacts__input-contacts {
-    width: 120%;
-  }
+  .contacts__input-contacts,
   .contacts__button-contacts {
     width: 120%;
   }
