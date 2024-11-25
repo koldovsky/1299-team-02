@@ -21,14 +21,18 @@
         </legend>
         <form action="" method="post" class="ready-diving__form">
           <label for="GET-name" class="ready-diving__label"></label>
-          <input
+          <div class="ready-diving__check">
+            <input
             id="GET-name"
             type="text"
             placeholder="Name*"
             name="name"
             class="ready-diving__input"
           />
+          <small>Error message</small> 
+        </div>
 
+         <div class="ready-diving__check">
           <label for="GET-phone" class="ready-diving__label"></label>
           <input
             id="GET-phone"
@@ -37,16 +41,21 @@
             name="phone"
             class="ready-diving__input"
           />
-  <label for="GET-email" class="ready-diving__label"></label>
-          <input
-            id="GET-email"
-            type="email"
-            placeholder="E-mail*"
-            name="email"
-            class="ready-diving__input"
-          />
-        
-
+          <small>Error message</small>
+         
+        </div>
+          <div class="ready-diving__check">
+            <label for="GET-email" class="ready-diving__label"></label>
+            <input
+              id="GET-email"
+              type="email"
+              placeholder="E-mail*"
+              name="email"
+              class="ready-diving__input"
+            />
+            <small>Error message</small>
+          </div>
+  
           <label for="dive-package" class="ready-diving__label"></label>
           <select id="dive-package" name="package" class="ready-diving__select">
             <option value="3-days-9-dives">3 Days - 9 Dives</option>

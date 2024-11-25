@@ -6,7 +6,7 @@ const emailField = document.getElementById('GET-email');
 //show error msg
 function showError(input, msg) {
     const formControl = input.parentElement;
-    formControl.className = 'form-control error';
+    formControl.className = 'ready-diving__check';
     const small = formControl.querySelector('small');
     small.innerText = msg;
 }
