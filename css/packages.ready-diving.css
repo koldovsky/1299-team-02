@@ -61,6 +61,19 @@
   height: 45px;
 }
 
+.ready-diving__check small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .ready-diving__check.error small {
+    visibility: visible;
+  }
+
+
 @media (min-width: 912px) {
   .ready-diving__form-wrapper {
     width: 450px;
