@@ -1,12 +1,17 @@
-const carousel = document.querySelector(".explore-container");
-const galleryContainer = document.querySelector(" .explore__gallery-wrap");
-const photoShared = document.querySelector(".diving-photo__item");
+const images = document.querySelectorAll(".carousel__img");
+let currentIndex = 0;
 
-const photos = Array.from(galleryContainer.children);
-
-function makeSlidesPerView() {
-    if (window.matchMedia("min-width: 450")) {
-        
-    }
-
+function moveCarousel() {
+  const currentImg = images[currentIndex];
+  const nextIndex = (currentIndex + 1) % images.length;
+  const nextImg = images[nextIndex];
+  currentImg.classList.remove("active");
+  currentImg.classList.add("prev");
+  nextImg.classList.add("active");
+  setTimeout(() => currentImg.classList.remove("prev"), 500);
+  currentIndex = nextIndex;
 }
+
+images[0].classList.add("active");
+
+setInterval(moveCarousel, 2000);
