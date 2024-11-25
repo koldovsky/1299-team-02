@@ -1,54 +1,84 @@
 .ready-diving {
-    background: linear-gradient(rgb(0, 14, 36, 1), rgba(0, 0, 0, 0)),
-      url(../img/about-us/instructors/instructors-bgr.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 800px;
-    padding: 50px 0 90px;
-  }
-
-  .ready-diving__form-wrapper{
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    margin: 25px auto 60px auto;
-    background-color: var(--form-background-color);
-    border: none; /* Removes any border */
-    box-shadow: none; /* Removes any box shadow */
-    outline: none; /* Removes focus outlines */
-  }
-  .ready-diving__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px 20px;
-    padding-top: 30px;
-  }
-  .ready-diving__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    gap: 10px 10px;
-    border: none; /* Removes any border */
-    box-shadow: none; /* Removes any box shadow */
-    outline: none; /* Removes focus outlines */
-    background-color: transparent; 
+  background: linear-gradient(rgb(0, 14, 36, 1), rgba(0, 0, 0, 0)),
+    url(../img/about-us/instructors/instructors-bgr.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  padding: 50px 0 90px;
 }
 
-.ready-diving__input, .ready-diving__select {
-    width: 180px;
-    height: 45px;
-    padding-left: 10px;
-    border-radius: 25px;
-    background-color:var(--form-input-color);
-    border: none;
-    color: gray;
-    font-family: var(--button-font-family);
+.ready-diving__form-wrapper {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  margin: 25px auto 60px auto;
+  background-color: var(--form-background-color);
+  border: none; /* Removes any border */
+  box-shadow: none; /* Removes any box shadow */
+  outline: none; /* Removes focus outlines */
+}
+
+
+.ready-diving__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px 20px;
+  padding-top: 30px;
+}
+.ready-diving__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 10px 10px;
+  border: none; /* Removes any border */
+  box-shadow: none; /* Removes any box shadow */
+  outline: none; /* Removes focus outlines */
+  background-color: transparent;
+}
+
+.ready-diving__input,
+.ready-diving__select {
+  width: 180px;
+  height: 45px;
+  padding-left: 10px;
+  border-radius: 25px;
+  background-color: var(--form-input-color);
+  border: none;
+  color: gray;
+  font-family: var(--button-font-family);
 }
 
 .ready-diving__form-button {
-padding-top: 10px;
+  padding-top: 10px;
+}
+
+.ready-diving__form-button > button {
+  width: 180px;
+  height: 45px;
+}
+
+@media (min-width: 912px) {
+  .ready-diving__form-wrapper {
+    width: 450px;
+    height: 465px;
+}
+.ready-diving__form__subtitle > h3 {
+  font-size: larger;
+}
+.ready-diving__input,
+.ready-diving__select {
+  width: 325px;
+  height: 43px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+.ready-diving__form-button > button {
+  width: 325px;
+  height: 43px;
+  margin-top: 10px;
+}
 }
