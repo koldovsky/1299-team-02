@@ -141,13 +141,8 @@
     width: 100px;
   }
 
-  .contacts__description {
-    max-width: 558px;
-  }
-
   .contacts__details-info {
     margin-left: 50px;
-    
   }
   .contacts__form-container {
     margin-left: 50px;
@@ -155,9 +150,7 @@
     height: 418px;
   }
 
-  .contacts__input {
-    width: 120%;
-  }
+  .contacts__input,
   .contacts__button {
     width: 120%;
   }
