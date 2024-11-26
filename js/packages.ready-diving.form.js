@@ -1,7 +1,7 @@
 const form = document.querySelector('.ready-diving__form');
-const nameField = document.getElementById('GET-name');
-const phoneField = document.getElementById('GET-phone');
-const emailField = document.getElementById('GET-email');
+const nameField = document.getElementById('Username');
+const phoneField = document.getElementById('Phone number');
+const emailField = document.getElementById('Email');
 
 // Show error message
 function showError(input, msg) {
@@ -28,7 +28,7 @@ function checkPhone(input) {
     if (regE.test(input.value.trim())) {
         showSuccess(input);
     } else {
-        showError(input, 'Phone number is not valid');
+        showError(input, 'Please input phone in format +XXX-XXX-XXX-XX-XX');
     }
 }
 
@@ -38,7 +38,7 @@ function checkEmail(input) {
     if (re.test(input.value.trim())) {
         showSuccess(input);
     } else {
-        showError(input, 'Email is not valid');
+        showError(input, 'Please input email in format user@example.com');
     }
 }
 

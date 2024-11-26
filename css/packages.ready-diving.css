@@ -67,7 +67,7 @@
 
 .ready-diving__check.error small {
   visibility: visible;
-  color: red; /* Example error color */
+  color: yellow; /* Example error color */
 }
 
 .ready-diving__check.success small {
