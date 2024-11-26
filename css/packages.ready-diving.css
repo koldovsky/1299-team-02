@@ -41,8 +41,8 @@
 
 .ready-diving__input,
 .ready-diving__select {
-  width: 180px;
-  height: 45px;
+  width: 200px;
+  height: 35px;
   padding-left: 10px;
   border-radius: 25px;
   background-color: var(--form-input-color);
@@ -52,12 +52,12 @@
 }
 
 .ready-diving__form-button {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .ready-diving__form-button > button {
   width: 180px;
-  height: 45px;
+  height: 40px;
 }
 .ready-diving__check small {
   align-items: center;
