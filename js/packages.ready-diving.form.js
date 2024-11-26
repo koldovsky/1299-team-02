@@ -1,7 +1,7 @@
 const form = document.querySelector('.ready-diving__form');
-const nameField = document.querySelector('#Username');
-const phoneField = document.querySelector('#Phone number');
-const emailField = document.querySelector('#Email');
+const nameField = document.getElementById('Username');
+const phoneField = document.getElementById('Phone number');
+const emailField = document.getElementById('Email');
 
 // Show error message
 function showError(input, msg) {
