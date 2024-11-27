@@ -41,7 +41,7 @@
 
 .ready-diving__input,
 .ready-diving__select {
-  width: 205px;
+  width: 215px;
   height: 35px;
   padding-left: 10px;
   border-radius: 25px;
@@ -56,13 +56,8 @@
 }
 
 .ready-diving__form-button > button {
-  width: 190px;
+  width: 215px;
   height: 40px;
-}
-.ready-diving__check small {
-  align-items: center;
-  text-align: center;
-  visibility: hidden;
 }
 
 .ready-diving__check.error small {
@@ -73,11 +68,38 @@
 .ready-diving__check.success small {
   visibility: hidden; /* Hide the error message on success */
 }
+ .ready-diving__err {
+    display: block;
+    color: yellow;
+    font-size: 0.9rem;
+    margin-top: 10px; /* Reduce space between input and error message */
+    text-align: left;
+    visibility: hidden;
+ }
+ @media (min-width: 478px) {
+  .ready-diving__form-wrapper {
+    width: 370px;
+    height: 500px;
+  }
+  .ready-diving__input,
+  .ready-diving__select {
+    width: 300px;
+    height: 43px;
+    padding-left: 15px;
+    margin-top: 7px;
+  }
+  .ready-diving__form-button > button {
+    width: 300px;
+    height: 43px;
+    margin-top: 15px;
+  }
+}
+
 
 @media (min-width: 912px) {
   .ready-diving__form-wrapper {
     width: 450px;
-    height: 465px;
+    height: 500px;
   }
   .ready-diving__form__subtitle > h3 {
     font-size: larger;
@@ -92,6 +114,6 @@
   .ready-diving__form-button > button {
     width: 325px;
     height: 43px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }

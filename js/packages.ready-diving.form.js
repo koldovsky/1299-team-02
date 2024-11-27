@@ -1,5 +1,5 @@
 const form = document.querySelector('.ready-diving__form');
-const nameField = document.getElementById('Username');
+const nameField = document.getElementById('Name');
 const phoneField = document.getElementById('Phone number');
 const emailField = document.getElementById('Email');
 
@@ -28,7 +28,7 @@ function checkPhone(input) {
     if (regE.test(input.value.trim())) {
         showSuccess(input);
     } else {
-        showError(input, 'Please input phone in format +XXX-XXX-XXX-XX-XX');
+        showError(input, 'Correct format is +XX-XXX-XXX-XX-XX');
     }
 }
 
@@ -38,7 +38,7 @@ function checkEmail(input) {
     if (re.test(input.value.trim())) {
         showSuccess(input);
     } else {
-        showError(input, 'Please input email in format user@example.com');
+        showError(input, 'Correct format is user@example.com');
     }
 }
 
@@ -77,7 +77,7 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();// Prevent default form submission
 
     if (!checkRequired([nameField, phoneField, emailField])) {
-        checkLength(nameField, 3, 15);
+        checkLength(nameField, 3, 25);
         checkLength(phoneField, 6, 25);
         checkPhone(phoneField);
         checkEmail(emailField);
