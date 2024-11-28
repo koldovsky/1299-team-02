@@ -13,70 +13,48 @@
       padding: 0 0 20px;
     }
   }
-
+  
   .destinations__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-
-    .destinations__card {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      align-items: center;
-      background-color: var(--background-blocks-description-color);
-
-      .destinations__card-image {
-        order: 1;
-      }
-
-      .destinations__card-content {
-        display: flex;
-        flex-direction: column; /*встає по вертикал*/
-        justify-content: center;
-        padding: 39px 43px;
-        order: 2;
-      }
-    }
-
-    .destinations__card-content h3 {
-      font-size: 1.6rem;
-    }
-
-    .destinations__card-content p {
-      padding: 20px 0;
-      line-height: 1.5;
-    }
-
-    .destinations__card:nth-child(2) .destinations__card-image {
-      order: 2; /* Змінюємо картинку на другу позицію */
-    }
-
-    .destinations__card:nth-child(2) .destinations__card-content {
-      order: 1; /* Змінюємо текст на першу позицію */
-    }
-
-    @media (max-width: 768px) {
-      .destinations__card {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-      }
-
-      .destinations__card-image {
-        order: 1 !important;
-      }
-
-      .destinations__card-content {
-        order: 2 !important;
-        padding: 39px 43px;
-      }
-    }
-  }
-
-  .destinations__button {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 0 40px;
+    gap: 30px;
+  }
+  
+  .destinations__card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .destinations__card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .destinations__list {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    .destinations__card {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .destinations__card-image {
+      width: 50%;
+      height: 100%;
+    }
+  
+    .destinations__card-content {
+      width: 50%;
+      padding: 46px 52px;
+    }
+  
+    .destinations__card:nth-child(2) {
+      flex-direction: row-reverse;
+    }
   }
 }
