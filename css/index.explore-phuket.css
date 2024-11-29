@@ -5,20 +5,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 10%;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .explore-phunket__h2-container {
-    width: 50%;
-    max-width: 1000px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.explore-phuket__icons {
+    margin-bottom: 18px;
+}
+
+.explore-phuket__h2-container {
+    margin-bottom: 18px;
 }
 
 .explore-phunket__h2 {
-    font-size: 60px;
-    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .explore-phuket__icons img {
@@ -28,8 +38,8 @@
 }
 
 .explore-phuket__content-image-container {
-    width: 400px;
-    aspect-ratio: 4/3;
+    width: 600px;
+    aspect-ratio: 5/3;
 }
 
 .explore-phuket__content-image-container img {
@@ -40,4 +50,14 @@
 .explore-phuket__content {
     display: flex;
     align-content: center;
+}
+
+.explore-phuket__text-container{
+    padding-right: 32px;
+}
+
+.explore-phuket__text-container p {
+    text-align: justify;
+    text-justify: distribute;
+    margin-bottom: 10px;
 }
