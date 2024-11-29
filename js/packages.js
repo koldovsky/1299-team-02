@@ -1,6 +1,7 @@
 function init() {
     import("./packages.explore-phuket.carousel.js");
-    import("./packages.ready-diving.form.js")
+    import("./packages.ready-diving.form.js");
+    import("./packages.ready-diving.form.submission.js");
   }
   
   const totalPartials = document.querySelectorAll(
