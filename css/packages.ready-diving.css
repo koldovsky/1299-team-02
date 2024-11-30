@@ -4,13 +4,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 750px;
   padding: 50px 0 90px;
 }
 
 .ready-diving__form-wrapper {
   width: 300px;
-  height: 400px;
+  height: 450px;
   text-align: center;
   margin: 25px auto 60px auto;
   background-color: var(--form-background-color);
@@ -27,6 +27,7 @@
   gap: 10px 20px;
   padding-top: 30px;
 }
+
 .ready-diving__form {
   display: flex;
   flex-direction: column;
@@ -52,7 +53,7 @@
 }
 
 .ready-diving__form-button {
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 .ready-diving__form-button > button {
@@ -60,27 +61,42 @@
   height: 40px;
 }
 
+#ready-diving__form-status {
+ position: absolute;
+  font-size: 10px;
+  align-items: center;
+  width: 250px;
+  margin-top: 5px;
+}
+
 .ready-diving__check.error small {
   visibility: visible;
-  color: yellow; /* Example error color */
+  color: yellow;
 }
 
 .ready-diving__check.success small {
   visibility: hidden; /* Hide the error message on success */
 }
- .ready-diving__err {
-    display: block;
-    color: yellow;
-    font-size: 0.9rem;
-    margin-top: 10px; /* Reduce space between input and error message */
-    text-align: left;
-    visibility: hidden;
- }
- @media (min-width: 478px) {
+
+.ready-diving__err {
+  display: block;
+  color: yellow;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: start;
+  visibility: hidden;
+}
+
+@media (min-width: 478px) {
+  .ready-diving {
+    height: 900px;
+  }
+
   .ready-diving__form-wrapper {
     width: 370px;
-    height: 500px;
+    height: 550px;
   }
+
   .ready-diving__input,
   .ready-diving__select {
     width: 300px;
@@ -88,22 +104,37 @@
     padding-left: 15px;
     margin-top: 7px;
   }
+
   .ready-diving__form-button > button {
     width: 300px;
     height: 43px;
-    margin-top: 15px;
+    margin-top: 12px;
+  }
+
+  #ready-diving__form-status {
+    display: block;
+    font-size: 13px;
+    align-items: start;
+    width: 320px;
+    margin-top: 8px;
+  }
+
+  .ready-diving__err {
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
-
 
 @media (min-width: 912px) {
   .ready-diving__form-wrapper {
     width: 450px;
-    height: 500px;
+    height: 580px;
   }
+
   .ready-diving__form__subtitle > h3 {
     font-size: larger;
   }
+
   .ready-diving__input,
   .ready-diving__select {
     width: 325px;
@@ -111,9 +142,17 @@
     padding-left: 15px;
     margin-top: 10px;
   }
+
   .ready-diving__form-button > button {
     width: 325px;
     height: 43px;
-    margin-top: 15px;
+    margin-top: 10px;
+  }
+
+  #ready-diving__form-status {
+   display: block;
+    font-size: 15px;
+    align-items: center;
+    width: 400px;
   }
 }
