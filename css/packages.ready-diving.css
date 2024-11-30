@@ -71,7 +71,7 @@
 
 .ready-diving__check.error small {
   visibility: visible;
-  color: yellow;
+  color: rgb(227, 227, 119);
 }
 
 .ready-diving__check.success small {
@@ -80,7 +80,7 @@
 
 .ready-diving__err {
   display: block;
-  color: yellow;
+  color: rgb(227, 227, 119);
   font-size: 0.9rem;
   margin-top: 10px;
   text-align: start;
@@ -120,7 +120,7 @@
   }
 
   .ready-diving__err {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 }
