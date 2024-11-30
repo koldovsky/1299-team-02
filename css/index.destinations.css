@@ -15,10 +15,6 @@
       margin: 15px auto 18px;
       padding: 0 0 20px;
     }
-
-    .destinations__title h2 {
-      font-size: 2.4rem;
-    }
   }
 
   .destinations__list {
@@ -42,10 +38,7 @@
 
   .destinations__card-content {
     padding: 39px 43px;
-  }
-
-  .destinations__card-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .destinations__card-content p {
@@ -88,6 +81,20 @@
 
     .destinations__card:nth-child(2) {
       flex-direction: row-reverse;
+    }
+
+    .destinations__title h2 {
+      font-size: 2.75rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .destinations__title h2 {
+      font-size: 3.2rem;
+    }
+
+    .destinations__card-content {
+      padding: 60px 70px;
     }
   }
 }
