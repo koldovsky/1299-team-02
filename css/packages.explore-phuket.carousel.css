@@ -40,10 +40,11 @@
   .carousel__item-title {
   font-weight: bold;
   font-size: 5em;
-  line-height: 1.2em;
   letter-spacing: 10px;
   h2 {
     color: #ff8600;
+    line-height: 1em;
+    margin-bottom: 15px;
   }
 }
 
@@ -329,6 +330,17 @@
   to{
     width: 0;
   }
+}
+
+@media screen and (max-width: 678px) {
+  .explore__carousel .explore__carousel-list .carousel__item-content .carousel__item-content {
+    padding-right: 0;
+  }
+
+  .explore__carousel .explore__carousel-list .carousel__item-content .carousel__item-content .carousel__item-title {
+    font-size: 30px;
+  }
+  
 }
 
 
