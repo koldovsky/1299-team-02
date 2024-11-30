@@ -116,11 +116,17 @@
     min-width: 272px;
   }
 }
-
+@media (min-width: 400px)
+{
+  .contacts__input-contacts,
+  .contacts__button-contacts {
+    width: 110%;
+  }
+}
 @media (min-width: 768px) {
-  .contacts__page-contacts{
+  .contacts__page-contacts {
     padding-top: 50px;
-    padding-bottom: 100px ;
+    padding-bottom: 100px;
   }
   .contacts__block-contacts {
     max-width: 1170px;
@@ -140,8 +146,6 @@
     width: 100px;
   }
 
-  
-
   .contacts__details-info-contacts {
     margin-left: 50px;
   }
@@ -150,6 +154,13 @@
     height: 418px;
   }
 
+  .contacts__input-contacts,
+  .contacts__button-contacts {
+    width: 90%;
+  }
+}
+
+@media (min-width: 900px) {
   .contacts__input-contacts,
   .contacts__button-contacts {
     width: 120%;

@@ -122,6 +122,14 @@
   }
 }
 
+@media (min-width: 400px)
+{
+  .contacts__input,
+  .contacts__button {
+    width: 110%;
+  }
+}
+
 @media (min-width: 768px) {
   .contacts__block {
     max-width: 1170px;
@@ -150,6 +158,13 @@
     height: 418px;
   }
 
+  .contacts__input,
+  .contacts__button {
+    width: 90%;
+  }
+}
+@media (min-width: 900px)
+{
   .contacts__input,
   .contacts__button {
     width: 120%;
