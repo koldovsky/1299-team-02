@@ -266,7 +266,7 @@
   animation: outImage 0.5s linear 1 forwards;
 }
 @keyframes outImage {
-  to{
+  to {
     width: 150px;
     height: 220px;
     border-radius: 20px;
@@ -274,6 +274,67 @@
     bottom: 30px;
   }
 }
+
+.explore__carousel.arrows__prev
+  .explore__carousel-thumbnail
+  .carousel__item:nth-child(1) {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.explore__carousel.arrows__prev
+.explore__carousel-list
+.carousel__item:nth-child(2) .carousel__item-title,
+.explore__carousel.arrows__prev
+.explore__carousel-list
+.carousel__item:nth-child(2) .carousel__item-description,
+.explore__carousel.arrows__prev
+.explore__carousel-list
+.carousel__item:nth-child(2) .buttons {
+  animation: contentOut .5s linear 1 forwards;
+}
+
+@keyframes contentOut{
+  to{
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+.explore__carousel.arrows__prev .arrows button,
+.explore__carousel.arrows__next .arrows button {
+  pointer-events: none;
+}
+
+/* time */
+.explore__carousel-time {
+  width: 0;
+  height: 3px;
+  background-color: #ff8600;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.explore__carousel.arrows__prev .explore__carousel-time,
+.explore__carousel.arrows__next .explore__carousel-time {
+  width: 100%;
+  animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning{
+  to{
+    width: 0;
+  }
+}
+
+
+
+
+
 
 /* .explore-container {
   position: relative;
@@ -294,4 +355,4 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-} */
+} */;
