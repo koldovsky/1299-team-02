@@ -18,7 +18,7 @@ prevDom.onclick = function () {
 
 let timeRunning = 2500;
 let runTimeOut;
-const timeOutNext = 7000;
+const timeOutNext = 15000;
 let runAutoRun = (setInterval(() => {
   nextDom.click();
 }, timeOutNext));
