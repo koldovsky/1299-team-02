@@ -10,7 +10,7 @@
 
 .ready-diving__form-wrapper {
   width: 300px;
-  height: 450px;
+  height: 400px;
   text-align: center;
   margin: 25px auto 60px auto;
   background-color: var(--form-background-color);
@@ -33,13 +33,16 @@
   flex-direction: column;
   align-items: center;
   text-align: left;
-  gap: 10px 10px;
+  gap: 5px 5px;
   border: none; /* Removes any border */
   box-shadow: none; /* Removes any box shadow */
   outline: none; /* Removes focus outlines */
   background-color: transparent;
 }
-
+.ready-diving__form-subtitle {
+  padding-bottom: 20px;
+  width: 100%;
+}
 .ready-diving__input,
 .ready-diving__select {
   width: 215px;
@@ -53,7 +56,7 @@
 }
 
 .ready-diving__form-button {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .ready-diving__form-button > button {
@@ -62,7 +65,7 @@
 }
 
 #ready-diving__form-status {
- position: absolute;
+  position: absolute;
   font-size: 10px;
   align-items: center;
   width: 250px;
@@ -71,7 +74,7 @@
 
 .ready-diving__check.error small {
   visibility: visible;
-  color: rgb(227, 227, 119);
+  color: rgb(203, 26, 61);
 }
 
 .ready-diving__check.success small {
@@ -80,21 +83,20 @@
 
 .ready-diving__err {
   display: block;
-  color: rgb(227, 227, 119);
+  color: rgb(203, 26, 61);
   font-size: 0.9rem;
-  margin-top: 10px;
   text-align: start;
   visibility: hidden;
 }
 
 @media (min-width: 478px) {
   .ready-diving {
-    height: 900px;
+    height: 800px;
   }
 
   .ready-diving__form-wrapper {
     width: 370px;
-    height: 550px;
+    height: 470px;
   }
 
   .ready-diving__input,
@@ -102,7 +104,6 @@
     width: 300px;
     height: 43px;
     padding-left: 15px;
-    margin-top: 7px;
   }
 
   .ready-diving__form-button > button {
@@ -120,7 +121,7 @@
   }
 
   .ready-diving__err {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -128,7 +129,7 @@
 @media (min-width: 912px) {
   .ready-diving__form-wrapper {
     width: 450px;
-    height: 580px;
+    height: 500px;
   }
 
   .ready-diving__form__subtitle > h3 {
@@ -150,7 +151,7 @@
   }
 
   #ready-diving__form-status {
-   display: block;
+    display: block;
     font-size: 15px;
     align-items: center;
     width: 400px;
