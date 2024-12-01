@@ -1,0 +1,37 @@
+.padi-aowd {
+    display: grid;
+    gap: 50px;
+}
+.padi-aowd__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.padi-aowd__info-container {
+    display: grid;
+    gap: 30px;
+}
+.padi-aowd__list-container {
+    display: grid;
+    gap: 10px;
+}
+.padi-aowd__list-of-requirements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.padi-aowd__requirements-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.padi-aowd__item-checkbox {
+    padding-top: 3px;
+    width: 20px;
+    height: 20px;
+}
+.padi-aowd__title {
+    text-align: center;
+    font-size: var(--h2-font-size-479);
+}
