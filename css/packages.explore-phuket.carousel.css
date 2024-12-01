@@ -6,7 +6,7 @@
 /*carousel*/
 .explore__carousel {
   width: 100%;
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   position: relative;
   color: var(--text-color);
@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 410px;
+  top: 512px;
   /* bottom: -63%; */
   left: 50%;
   transform: translateX(-50%);
@@ -102,7 +102,6 @@
   width: 70px;
   height: 80px;
   flex-shrink: 0;
-  opacity: 0.9;
   position: relative;
 }
 
@@ -217,9 +216,6 @@
 
 
 @media screen and (min-width: 425px) {
-  .explore__carousel {
-    height: 500px;
-  }
   .explore__carousel-thumbnail .carousel__item {
     width: 15vw;
     height: 17vw;
@@ -248,7 +244,7 @@
 
 @media screen and (min-width: 540px) {
   .explore__carousel {
-        min-height: 500px;
+        min-height: 600px;
   }
   .explore__carousel-thumbnail {
     gap: 110px;
@@ -264,6 +260,7 @@
     max-height: 850px;
     min-height: 500px;
   }
+  
   .explore__carousel
     .explore__carousel-list
     .carousel__item
@@ -330,10 +327,8 @@
 
   .explore__carousel-thumbnail {
     display: flex;
-    flex-direction: row;
     position: absolute;
-    top: auto;
-    left: 52%; /* initial 50% */
+    left: 53vw; /* initial 50% */
     bottom: 15px; /* initial 50px */
     transform: translateX(0);
     width: max-content;
@@ -344,7 +339,6 @@
     width: 110px;
     height: 150px;
     flex-shrink: 0;
-    opacity: 0.9;
     position: relative;
   }
 
@@ -407,7 +401,7 @@
       width: 110px;
       height: 150px;
     position: absolute;
-    left: 52%;
+    left: 53vw;
     bottom: 15px;
     border-radius: 20px;
     animation: showImage 0.5s linear 1 forwards;
@@ -468,7 +462,7 @@
       width: 110px;
       height: 150px;
       border-radius: 20px;
-      left: 52%;
+      left: 53vw;
       bottom: 15px;
     }
   }
