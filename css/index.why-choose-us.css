@@ -26,6 +26,16 @@
   .why-choose-us__option-icon{
     width: 60px;
   }
+  .why-choose-us__option-icon-background{
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    height: 100px; 
+    background-color: rgba(72, 134, 174, 0.4); 
+    border-radius: 50%; 
+  }
   .why-choose-us__container {
     margin-top: 45px;
     display: grid;
@@ -54,4 +64,18 @@
     margin-top: 0;}
   .why-choose-us__option, .why-choose-us__option--bottom {
     margin-top:45px;
-  }}
+  }
+.why-choose-us__option-icon-background{
+  width: 70px; 
+  height: 70px; 
+}
+.why-choose-us__option-icon{
+  width: 40px; 
+  height: 40px;
+}
+.why-choose-us__title {
+  font-size: 38px;}
+   .why-choose-us__icon {
+    width: 49px;
+  }
+}
