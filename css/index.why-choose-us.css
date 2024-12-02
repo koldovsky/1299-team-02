@@ -2,45 +2,81 @@
   text-align: center;
   padding: 40px 20px;
 }
-
+.why-choose-us__header
+{
+  display: grid;
+  grid-column: 1 / -1;
+  justify-items: center;
+}
 .why-choose-us__title {
-  font-size: 60px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .why-choose-us__option-title,.why-choose-us__option-description{
+    margin-top: 20px;
+  }
+  .why-choose-us__option-title{
+  font-size: 24px;
+  }
+  .why-choose-us__icon {
+    width: 68px;
+    height: auto;
+  }
+  .why-choose-us__option-icon{
+    width: 60px;
+  }
+  .why-choose-us__option-icon-background{
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    height: 100px; 
+    background-color: rgba(72, 134, 174, 0.4); 
+    border-radius: 50%; 
+  }
+  .why-choose-us__container {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .why-choose-us__option, .why-choose-us__option--bottom {
+    justify-items: center;
+    padding: 0 15px;
+    border-radius: 10px;
+    text-align: center;
+    
+  }
 
-.why-choose-us__icon {
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  @media (max-width: 990px) {
+  .why-choose-us__container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    .why-choose-us__option--bottom{
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 460px)
+  {.why-choose-us__container {
+    grid-template-columns: 1fr;
+  }
+  .why-choose-us__container {
+    margin-top: 0;}
+  .why-choose-us__option, .why-choose-us__option--bottom {
+    margin-top:45px;
+  }
+.why-choose-us__option-icon-background{
+  width: 70px; 
+  height: 70px; 
 }
-
-.why-choose-us__container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: nowrap;
+.why-choose-us__option-icon{
+  width: 40px; 
+  height: 40px;
 }
-
-.why-choose-us__option {
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s;
+.why-choose-us__title {
+  font-size: 38px;}
+   .why-choose-us__icon {
+    width: 49px;
+  }
 }
-
-.why-choose-us__option-icon {
-  height: 150px;
-  width: 100%;
-  margin-bottom: 25px;
-}
-
-.why-choose-us__option-title{
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
