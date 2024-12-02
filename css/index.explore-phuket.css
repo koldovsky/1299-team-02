@@ -5,18 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 40px 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    padding: 50px 32px 80px 32px;
+    text-align: center;
 }
 
-.explore-phunket__h2-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .explore-phuket__icons {
     margin-bottom: 18px;
@@ -32,32 +24,39 @@
 }
 
 .explore-phuket__icons img {
-    width: 100px;
+    width: 68px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .explore-phuket__content-image-container {
-    width: 600px;
     aspect-ratio: 5/3;
 }
-
+.explore-phuket__text-container, .explore-phuket__content-image-container{
+    padding: 0 15px;
+}
 .explore-phuket__content-image-container img {
     height: 100%;
     object-fit: cover;
 }
 
 .explore-phuket__content {
-    display: flex;
-    align-content: center;
+    margin-top:50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); 
+    
 }
 
-.explore-phuket__text-container{
-    padding-right: 32px;
-}
 
-.explore-phuket__text-container p {
-    text-align: justify;
-    text-justify: distribute;
+.explore-phuket__text-container {
+    text-align: left;
     margin-bottom: 10px;
+    justify-content: center;
+}
+@media (max-width: 768px){
+.explore-phuket__content 
+{
+    grid-template-columns: 1fr; 
+} 
 }

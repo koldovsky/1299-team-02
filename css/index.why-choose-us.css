@@ -9,7 +9,7 @@
   justify-items: center;
 }
 .why-choose-us__title {
-    font-size: 44px;
+    font-size: 3.2rem;
     font-weight: bold;
     margin-top: 20px;
   }
@@ -48,12 +48,13 @@
     text-align: center;
     
   }
-  .why-choose-us__option--bottom{
-    margin-top: 30px;
-  }
+
   @media (max-width: 990px) {
   .why-choose-us__container {
       grid-template-columns: repeat(2, 1fr); 
+    }
+    .why-choose-us__option--bottom{
+      margin-top: 30px;
     }
   }
   @media (max-width: 460px)
