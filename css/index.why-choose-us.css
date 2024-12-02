@@ -16,7 +16,7 @@
   }
   .why-choose-us__container {
     display: grid;
-    grid-template-columns: repeat(4,25%);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .why-choose-us__option {
     padding: 20px;
