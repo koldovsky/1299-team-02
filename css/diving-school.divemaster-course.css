@@ -7,19 +7,19 @@
 .background-with-corals::before {
     content: "";
     position: absolute;
-    top: 35%;
-    left: 50%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.05)),
         url(../img/diving-school/background-image-with-corals.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% -150px;
     z-index: -1;
-    opacity: 0.5;
-    transform: translate(-50%, -50%);
+    opacity: 0.4;
 }
+
 
 .course__banner {
     width: 100%;
@@ -35,9 +35,93 @@
     height: 100%;
     object-fit: cover;
     object-position: center 40%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 .divemaster-course {
     display: flex;
     flex-direction: column;
+    gap: 50px;
+}
+.divemaster-course__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
+}
+.divemaster-course__info-container{
+    display: grid;
+    gap: 50px;
+}
+.divemaster-course__list-container {
+    display: grid;
+    gap: 10px;
+}
+.divemaster-course__list-of-requirements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.divemaster-course__requirements-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.divemaster-course__item-checkbox {
+    padding-top: 3px;
+    width: 20px;
+    height: 20px;
+}
+.divemaster-course__item-text {
+    font-size: 1rem;
+}
+.divemaster-course__description {
+    font-size: 1rem;
+}
+.divemaster-course__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.divemaster-course__card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 20px;
+}
+.divemaster-course__card-img-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--card-background-circle-color);
+    border-radius: 50%;
+}
+.divemaster-course__card-description {
+    font-size: 1rem;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.divemaster-course__img-card {
+    width: 26px;
+    height: 26px;
+}
+@media (min-width: 768px) {
+    .divemaster-course__info-container {
+        grid-template-columns: 55% auto;
+    }
+    .divemaster-course__card-img-container{
+        width: 70px;
+        height: 70px;
+    }
+    .divemaster-course__img-card {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (min-width: 992px) {
+    .divemaster-course__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
