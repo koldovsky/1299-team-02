@@ -1,0 +1,96 @@
+/* Загальний фон для сторінки */
+.background {
+    background: url(../img/diving-school/background-image-for-form.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__description {
+    color: var(--text-color);
+}
+
+.form__input, .form__select {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 16px; 
+    font-size: 14px; 
+    color: var(--form-fields-information);
+    font-weight: 500; 
+    border: none;
+    background: rgba(255, 255, 255, 0.11); 
+    box-sizing: border-box; 
+}
+
+.form__input::placeholder, .form__select {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.form__button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 16px;
+    background: var(--primary-button-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s ease;
+}
+
+.form__button:hover {
+    background: var(--primary-button-hover-color);
+}
+
+.form__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+        width: 90%; 
+    }
+    .form__input, .form__select, .form__button {
+        font-size: 12px; 
+    }
+}
